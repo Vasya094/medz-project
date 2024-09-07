@@ -8,6 +8,7 @@ export default interface SiteInformation {
 	websiteName: string
 	companyLegalName: string
 	phone: string
+	WhatsappPhone: string
 	location: string
 	navbarItems: Array<NavbarItem>
 	footerLeft: string

@@ -8,6 +8,7 @@ import SimplePage from '../types/CmsSingleTypes/simplePage'
 import { Box } from '@chakra-ui/react'
 import SEO from '../components/SEO'
 import { metaDescriptionFromHtml } from '../utils/pipes'
+import { aboutUsPage, siteInfo } from '../../bd/about'
 
 type Props = {
 	aboutUsPage: SimplePage
@@ -15,6 +16,7 @@ type Props = {
 }
 
 const AboutUsPage = ({ aboutUsPage, siteInfo }: Props) => {
+	console.log(siteInfo)
 	return (
 		<>
 			<SEO
@@ -36,10 +38,10 @@ const AboutUsPage = ({ aboutUsPage, siteInfo }: Props) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-	const [aboutUsPage, siteInfo] = await Promise.all([
-		getData('about-us-page'),
-		getSiteInfo(),
-	])
+	// const [aboutUsPage, siteInfo] = await Promise.all([
+	// 	getData('about-us-page'),
+	// 	getSiteInfo(),
+	// ])
 
 	return {
 		props: { aboutUsPage, siteInfo },

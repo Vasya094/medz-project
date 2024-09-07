@@ -9,6 +9,7 @@ import {
 import Link from 'next/link'
 import Container from './Container'
 import HomePageType from '../types/CmsSingleTypes/homePage'
+import collage from '../../public/images/c250f4376fbfb2943bf09d42b3037290.jpg'
 
 const Hero = ({
 	heroImage,
@@ -24,8 +25,8 @@ const Hero = ({
 			h={'70vh'}
 			minHeight={'31rem'}
 			maxHeight={'50rem'}
-			backgroundImage={encodeURI(heroImage.data.attributes.url)}
-			backgroundSize={'cover'}
+			backgroundImage={collage.src}
+			backgroundSize={'auto'}
 			backgroundPosition={'center'}
 		>
 			<VStack

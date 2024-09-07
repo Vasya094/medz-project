@@ -10,6 +10,7 @@ import CmsRichText from '../../components/CmsRichText'
 import SimplePage from '../../types/CmsSingleTypes/simplePage'
 import SEO from '../../components/SEO'
 import { metaDescriptionFromHtml } from '../../utils/pipes'
+import { galleryPage } from '../../../bd/gallery'
 
 type Props = {
 	galleryPage: SimplePage
@@ -19,7 +20,7 @@ type Props = {
 
 const Gallery = ({ galleryPage, houses, siteInfo }: Props) => {
 	const [shouldHave2Columns] = useMediaQuery('(min-width: 45rem)')
-
+	console.log(galleryPage)
 	return (
 		<>
 			<SEO
@@ -52,11 +53,12 @@ const Gallery = ({ galleryPage, houses, siteInfo }: Props) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-	const [galleryPage, houses, siteInfo] = await Promise.all([
-		getData('our-homes-page'),
+	const [houses, siteInfo] = await Promise.all([
 		getData('houses?populate=thumbnail'),
 		getSiteInfo(),
 	])
+
+
 
 	return {
 		props: { galleryPage, houses, siteInfo },

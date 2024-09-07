@@ -10,6 +10,8 @@ import SimplePage from '../types/CmsSingleTypes/simplePage'
 import Phone from '../components/Phone'
 import SEO from '../components/SEO'
 import { metaDescriptionFromHtml } from '../utils/pipes'
+import { contactPage, siteInfo } from '../../bd/contact'
+import WhatsappPhone from '../components/WhatsappPhone'
 
 type Props = {
 	contactPage: SimplePage
@@ -17,6 +19,7 @@ type Props = {
 }
 
 const ContactUsPage = ({ contactPage, siteInfo }: Props) => {
+	console.log(siteInfo)
 	return (
 		<>
 			<SEO
@@ -32,6 +35,7 @@ const ContactUsPage = ({ contactPage, siteInfo }: Props) => {
 						<Box width={['full', '50%']} mr={[0, '4rem']}>
 							<CmsRichText text={contactPage.pageBody} siteInfo={siteInfo} />
 							<Phone siteInfo={siteInfo} />
+							<WhatsappPhone siteInfo={siteInfo} />
 						</Box>
 						<Box width={['full', '60%']}>
 							<ContactForm siteInfo={siteInfo} />
@@ -44,10 +48,10 @@ const ContactUsPage = ({ contactPage, siteInfo }: Props) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-	const [contactPage, siteInfo] = await Promise.all([
-		getData('contact-page'),
-		getSiteInfo(),
-	])
+	// const [contactPage, siteInfo] = await Promise.all([
+	// 	getData('contact-page'),
+	// 	getSiteInfo(),
+	// ])
 
 	return {
 		props: { contactPage, siteInfo },

@@ -11,6 +11,7 @@ import ContactForm from '../components/ContactForm'
 import Phone from '../components/Phone'
 import TestimonialCard from '../components/TestimonialCard'
 import SEO from '../components/SEO'
+import { homePage, siteInfo } from '../../bd'
 
 type Props = {
 	homePage: HomePageType
@@ -18,6 +19,7 @@ type Props = {
 }
 
 const HomePage = ({ homePage, siteInfo }: Props) => {
+	console.log(siteInfo)
 	return (
 		<>
 			<SEO siteInfo={siteInfo} />
@@ -55,16 +57,16 @@ const HomePage = ({ homePage, siteInfo }: Props) => {
 	)
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-	const [homePage, siteInfo] = await Promise.all([
-		getData('home-page?populate=*'),
-		getSiteInfo(),
-	])
+export const getStaticProps: GetStaticProps = () => {
+	// const [homePage, siteInfo] = await Promise.all([
+	// 	getData('home-page?populate=*'),
+	// 	getSiteInfo(),
+	// ])
 
 	return {
 		props: {
 			homePage,
-			siteInfo: siteInfo,
+			siteInfo,
 		},
 	}
 }

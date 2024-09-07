@@ -10,6 +10,7 @@ interface FeatureProps {
 	icon: ReactElement
 	isPhoneNumber?: boolean
 	isEmail?: boolean
+	isWhatsapp?: boolean
 }
 
 const IconText = ({
@@ -20,6 +21,7 @@ const IconText = ({
 	iconBg,
 	isPhoneNumber,
 	isEmail,
+	isWhatsapp,
 }: FeatureProps) => {
 	const circleSize = '3rem'
 
@@ -64,6 +66,14 @@ const IconText = ({
 	if (isEmail) {
 		return (
 			<Link href={'mailto:' + text} passHref legacyBehavior>
+				{component}
+			</Link>
+		);
+	}
+
+	if (isWhatsapp) {
+		return (
+			<Link href={'https://wa.me/' + text.replace(/[ ()-]/g, "")} passHref legacyBehavior target={'_blank'}>
 				{component}
 			</Link>
 		);
