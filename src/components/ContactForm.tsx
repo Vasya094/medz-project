@@ -7,10 +7,10 @@ import {
 	Input,
 	Textarea,
 } from '@chakra-ui/react'
-import { useForm, ValidationError } from '@formspree/react'
-import { ReactNode } from 'react'
+import {ReactNode, useState} from 'react'
 import SiteInformation from '../types/CmsSingleTypes/siteInformation'
 import PhoneNumberInput from './PhoneNumberInput'
+import sendFeedbackToTelegram from './../utils/tg'
 
 type Props = {
 	siteInfo: SiteInformation
@@ -19,11 +19,48 @@ type Props = {
 }
 
 const ContactForm = ({
-	siteInfo,
-	formHeading,
-	shouldHaveNegativeTopMargin,
-}: Props) => {
-	const [state, handleSubmit] = useForm(siteInfo.formspreeContactFormId)
+						 siteInfo,
+						 formHeading,
+						 shouldHaveNegativeTopMargin,
+					 }: Props) => {
+	const [formState, setFormState] = useState({
+		name: '',
+		email: '',
+		phone: '',
+		message: '',
+	})
+
+	const [isSubmitting, setIsSubmitting] = useState(false)
+	const [isSuccess, setIsSuccess] = useState(false)
+
+	const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+		const { name, value } = e.target
+		setFormState((prevState) => ({
+			...prevState,
+			[name]: value,
+		}))
+	}
+
+	const setValue = (name: string, value: string) => {
+		setFormState((prevState) => ({
+			...prevState,
+			[name]: value,
+		}))
+	}
+
+	const handleSubmit = async (e: React.FormEvent) => {
+		e.preventDefault()
+		setIsSubmitting(true)
+
+		try {
+			await sendFeedbackToTelegram(formState)
+			setIsSuccess(true)
+		} catch (error) {
+			console.error('Error sending feedback:', error)
+		} finally {
+			setIsSubmitting(false)
+		}
+	}
 
 	const emailRegex =
 		'(?:[a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+/=?^_`{|}~-]+)*|"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])'
@@ -42,14 +79,13 @@ const ContactForm = ({
 		</Box>
 	)
 
-	// if (state.succeeded) {
-	if (state.succeeded) {
+	if (isSuccess) {
 		return box(
 			<VStack spacing={'1rem'} py={'11.25rem'}>
 				<Heading fontSize={'1.5rem'} textAlign={'center'} fontWeight={'bold'}>
-					Thank you for your message!
+					Спасибо за заполнение формы
 				</Heading>
-				<Text>We will get back to you soon.</Text>
+				<Text>Мы свяжемся с Вами в ближайшее время</Text>
 			</VStack>
 		)
 	}
@@ -64,59 +100,46 @@ const ContactForm = ({
 				)}
 
 				<Input
-					type='text'
-					name='name'
-					placeholder='Name'
-					disabled={state.submitting}
+					type="text"
+					name="name"
+					placeholder="Как к Вам обращаться"
+					value={formState.name}
+					onChange={handleChange}
+					disabled={isSubmitting}
 					required
 				/>
-				<ValidationError
-					field='name'
-					errors={state.errors}
-					style={{ color: errorTextColor }}
-				></ValidationError>
 
 				<Input
-					type='email'
-					name='email'
-					placeholder='Email'
+					type="email"
+					name="email"
+					placeholder="Email"
 					pattern={emailRegex}
-					disabled={state.submitting}
+					value={formState.email}
+					onChange={handleChange}
+					disabled={isSubmitting}
 					required
 				/>
-				<ValidationError
-					field='email'
-					errors={state.errors}
-					style={{ color: errorTextColor }}
-				></ValidationError>
 
 				<PhoneNumberInput
-					name='phone'
-					placeholder='Phone Number'
-					disabled={state.submitting}
+					name="phone"
+					placeholder="Номер Телефона"
+					onChange={(val: string) => setValue('phone', val)}
+					disabled={isSubmitting}
 					required
 				/>
-				<ValidationError
-					field='phone'
-					errors={state.errors}
-					style={{ color: errorTextColor }}
-				></ValidationError>
 
 				<Textarea
-					name='message'
-					placeholder='Message'
+					name="message"
+					placeholder="Вопрос сообщение доп информация"
 					minHeight={'10rem'}
-					disabled={state.submitting}
+					value={formState.message}
+					onChange={handleChange}
+					disabled={isSubmitting}
 					required
 				/>
-				<ValidationError
-					field='message'
-					errors={state.errors}
-					style={{ color: errorTextColor }}
-				></ValidationError>
 
 				<Button
-					type='submit'
+					type="submit"
 					w={'full'}
 					mt={8}
 					backgroundColor={'brand'}
@@ -124,7 +147,7 @@ const ContactForm = ({
 					rounded={'md'}
 					_hover={{ bg: 'brandDark' }}
 				>
-					{state.submitting ? 'Sending...' : 'Send'}
+					{isSubmitting ? 'Отправка...' : 'Отправить'}
 				</Button>
 			</VStack>
 		</form>
