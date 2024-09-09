@@ -10,6 +10,7 @@ export const contactPage = {
 export const siteInfo = {
     "phone": "89376406449",
     "WhatsappPhone": "89378207707",
+    "tgPhone": "Vasya95ast",
     "companyLegalName": "Williams Custom Homes, LLC",
     "websiteName": "Williams Custom Homes",
     "location": "Stark County, Ohio",
@@ -87,20 +88,8 @@ export const siteInfo = {
         },
         {
             "id": 4,
-            "label": "Featured Neighborhoods",
-            "url": "/neighborhood",
-            "visible": true
-        },
-        {
-            "id": 5,
-            "label": "Standard Features",
-            "url": "/features",
-            "visible": true
-        },
-        {
-            "id": 6,
-            "label": "Testimonials",
-            "url": "/testimonials",
+            "label": "Виды Работ",
+            "url": "/works",
             "visible": true
         },
         {

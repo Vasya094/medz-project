@@ -1,7 +1,7 @@
-import { Box, HStack, Text, useMediaQuery } from '@chakra-ui/react'
+import {Box, Heading, HStack, Text, useMediaQuery} from '@chakra-ui/react'
 import React from 'react'
 import House from '../types/CmsCollectionTypes/house'
-import { FaBath, FaBed, FaHome, FaRuler } from 'react-icons/fa'
+import { FaRubleSign } from "react-icons/fa";
 import Link from 'next/link'
 import { theme } from '../pages/_app'
 
@@ -40,7 +40,7 @@ const HouseCard = ({ house }: Props) => {
 					backgroundImage={`url(${encodeURI(house.thumbnail.data.attributes.formats.small?.url ?? house.thumbnail.data.attributes.url)})`}
 					backgroundPosition={'center'}
 					backgroundColor={'#ddd'}
-					backgroundSize={house.thumbnail.data ? 'cover' : '4rem'}
+					backgroundSize={'contain'}
 					backgroundRepeat={'no-repeat'}
 					position={'relative'}
 				>
@@ -56,21 +56,18 @@ const HouseCard = ({ house }: Props) => {
 					justifyContent={shouldHave2Columns ? 'flex-start' : 'space-between'}
 				>
 					<HStack>
-						<FaBed />
-						<Text>{house.bedrooms}</Text>
-					</HStack>
-					<HStack>
-						<FaBath />
-						<Text>{bathrooms}</Text>
-					</HStack>
-					<HStack>
-						<FaRuler />
+						<FaRubleSign />
 						<Text>
-							{house.squareFeet.toLocaleString()} sf
+							{house.rentPrice} руб/сут
 						</Text>
 					</HStack>
 				</HStack>
-				<Text>{house.title}</Text>
+				<Heading as='h2' size='md'>
+					{house.title}
+				</Heading>
+				<Heading mt={'1rem'} as='h5' size='sm' color={'gray'}>
+					{house.description}
+				</Heading>
 			</Box>
 		</Link>
 	)

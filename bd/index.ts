@@ -98,7 +98,7 @@ export const homePage = {
                 "attributes": {
                     "text": "We are very pleased with our experience working with Williams Custom Homes. Everyone is very nice to work with and no question is too trivial. We were always able to contact someone when we had a question and generally had an answer within 1-2 days. Overall they are a very professional team and have provided us with a WONDERFUL new home. I would recommend them to anyone!!",
                     "name": "Jo Anne & Doug D.",
-                    "location": "Massillon, OH",
+                    "location": "Астрахань",
                     "order": 100,
                     "createdAt": "2023-01-05T22:02:42.344Z",
                     "updatedAt": "2023-01-05T22:02:52.061Z",
@@ -113,9 +113,10 @@ export const homePage = {
 export const siteInfo = {
     "phone": "89378207707",
     "WhatsappPhone": "89378207707",
+    "tgPhone": "Vasya95ast",
     "companyLegalName": "Williams Custom Homes, LLC",
     "websiteName": "Williams Custom Homes",
-    "location": "Stark County, Ohio",
+    "location": "Астрахань РФ",
     "formspreeContactFormId": "mdobwbql",
     "createdAt": "2023-01-05T17:12:15.629Z",
     "updatedAt": "2023-03-12T18:16:57.432Z",
@@ -190,20 +191,8 @@ export const siteInfo = {
         },
         {
             "id": 4,
-            "label": "Featured Neighborhoods",
-            "url": "/neighborhood",
-            "visible": true
-        },
-        {
-            "id": 5,
-            "label": "Standard Features",
-            "url": "/features",
-            "visible": true
-        },
-        {
-            "id": 6,
-            "label": "Testimonials",
-            "url": "/testimonials",
+            "label": "Виды Работ",
+            "url": "/works",
             "visible": true
         },
         {
@@ -215,8 +204,8 @@ export const siteInfo = {
     ],
     "globalSeo": {
         "id": 1,
-        "title": "Williams Custom Homes - Stark County New Home Construction & Home Builder - Canton, Massillon, Ohio",
-        "description": "Williams Custom Homes is a Stark County, Ohio, Massillon, Canton area custom home builder.",
+        "title": "Бруно Медзенга - Прокат строй техники. Монтажно-строительная компания - город Астрахань РФ",
+        "description": "Аренда, прокат и продажа строительных инструментов и техники в городе Астрахань",
         "shareImage": {
             "data": {
                 "id": 11,

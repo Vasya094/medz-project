@@ -1,7 +1,6 @@
-import { Box, Heading, SimpleGrid, useMediaQuery } from '@chakra-ui/react'
+import { Box, SimpleGrid, useMediaQuery } from '@chakra-ui/react'
 import type { GetStaticProps } from 'next'
 import SiteInformation from '../../types/CmsSingleTypes/siteInformation'
-import getData, { getSiteInfo } from '../../utils/data'
 import Container from '../../components/Container'
 import Layout from '../../components/Layout'
 import House from '../../types/CmsCollectionTypes/house'
@@ -10,7 +9,7 @@ import CmsRichText from '../../components/CmsRichText'
 import SimplePage from '../../types/CmsSingleTypes/simplePage'
 import SEO from '../../components/SEO'
 import { metaDescriptionFromHtml } from '../../utils/pipes'
-import { galleryPage } from '../../../bd/gallery'
+import { galleryPage, houses, siteInfo } from '../../../bd/gallery'
 
 type Props = {
 	galleryPage: SimplePage
@@ -20,7 +19,8 @@ type Props = {
 
 const Gallery = ({ galleryPage, houses, siteInfo }: Props) => {
 	const [shouldHave2Columns] = useMediaQuery('(min-width: 45rem)')
-	console.log(galleryPage)
+	console.log(houses)
+
 	return (
 		<>
 			<SEO
@@ -53,11 +53,9 @@ const Gallery = ({ galleryPage, houses, siteInfo }: Props) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-	const [houses, siteInfo] = await Promise.all([
-		getData('houses?populate=thumbnail'),
-		getSiteInfo(),
-	])
-
+	// const [houses] = await Promise.all([
+	// 	getData('houses?populate=thumbnail'),
+	// ])
 
 
 	return {

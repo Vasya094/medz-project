@@ -1,7 +1,6 @@
 import { Box, Stack } from '@chakra-ui/react'
 import type { GetStaticProps } from 'next'
 import SiteInformation from '../types/CmsSingleTypes/siteInformation'
-import getData, { getSiteInfo } from '../utils/data'
 import Container from '../components/Container'
 import Layout from '../components/Layout'
 import CmsRichText from '../components/CmsRichText'
@@ -12,6 +11,7 @@ import SEO from '../components/SEO'
 import { metaDescriptionFromHtml } from '../utils/pipes'
 import { contactPage, siteInfo } from '../../bd/contact'
 import WhatsappPhone from '../components/WhatsappPhone'
+import TGLink from '../components/TGLink'
 
 type Props = {
 	contactPage: SimplePage
@@ -36,6 +36,7 @@ const ContactUsPage = ({ contactPage, siteInfo }: Props) => {
 							<CmsRichText text={contactPage.pageBody} siteInfo={siteInfo} />
 							<Phone siteInfo={siteInfo} />
 							<WhatsappPhone siteInfo={siteInfo} />
+							<TGLink siteInfo={siteInfo} />
 						</Box>
 						<Box width={['full', '60%']}>
 							<ContactForm siteInfo={siteInfo} />

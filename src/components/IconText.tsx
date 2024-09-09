@@ -11,6 +11,7 @@ interface FeatureProps {
 	isPhoneNumber?: boolean
 	isEmail?: boolean
 	isWhatsapp?: boolean
+	isTg?: boolean
 }
 
 const IconText = ({
@@ -22,6 +23,7 @@ const IconText = ({
 	isPhoneNumber,
 	isEmail,
 	isWhatsapp,
+	isTg,
 }: FeatureProps) => {
 	const circleSize = '3rem'
 
@@ -30,6 +32,7 @@ const IconText = ({
 			as={'a'}
 			align={'center'}
 			spacing={'1rem'}
+			target={'_blank'}
 			alignItems={'center'}
 			mt={'2rem'}
 			mb={'1rem'}
@@ -74,6 +77,14 @@ const IconText = ({
 	if (isWhatsapp) {
 		return (
 			<Link href={'https://wa.me/' + text.replace(/[ ()-]/g, "")} passHref legacyBehavior target={'_blank'}>
+				{component}
+			</Link>
+		);
+	}
+
+	if (isTg) {
+		return (
+			<Link href={'https://t.me/' + text.replace(/[ ()-]/g, "")} passHref legacyBehavior target={'_blank'}>
 				{component}
 			</Link>
 		);

@@ -4,7 +4,6 @@ export const aboutUsPage = {
     </p> 
     <p> <strong>Кроме</strong> аренды и продажи строительного оборудования, мы специализируемся на выполнении алмазного бурения и резки, что позволяет точно и быстро решать задачи в самых сложных условиях. </p> <p><strong>Наши услуги </strong> включают также установку систем видеонаблюдения, обеспечивающих безопасность на объектах любой сложности.
     Мы стремимся быть вашим надежным партнером в строительстве, предлагая комплексные решения по доступным ценам. Обращайтесь к нам, чтобы получить профессиональное оборудование и услуги, которые помогут вам эффективно реализовать ваш проект.</p>
-     <a href=\"/testimonials\"><strong>hear what our customers are saying…</strong></a>
      <p>Наша компания также предоставляет услуги по <strong>доставке строительной техники и оборудования</strong> прямо на объект, что позволяет вам сэкономить время и силы. Мы берем на себя все заботы, связанные с логистикой, так что вам не нужно беспокоиться о транспортировке.
      Мы работаем в <strong> Астрахани и соседних регионах</strong>, предоставляя технику и выполняя услуги в кратчайшие сроки. Наши специалисты всегда идут навстречу клиентам, предлагая гибкие условия сотрудничества и индивидуальный подход к каждому проекту.
      </p> 
@@ -19,6 +18,8 @@ export const aboutUsPage = {
 
 export const siteInfo = {
     "phone": "89376406449",
+    "tgPhone": "Vasya95ast",
+    "WhatsappPhone": "89378207707",
     "companyLegalName": "Williams Custom Homes, LLC",
     "websiteName": "Williams Custom Homes",
     "location": "Stark County, Ohio",
@@ -78,43 +79,31 @@ export const siteInfo = {
     "navbarItems": [
         {
             "id": 3,
-            "label": "Home",
+            "label": "Главная",
             "url": "/",
             "visible": true
         },
         {
             "id": 1,
-            "label": "About",
-            "url": "/about",
+            "label": "Прокат",
+            "url": "/rental",
             "visible": true
         },
         {
             "id": 2,
-            "label": "Gallery",
-            "url": "/gallery",
+            "label": "Магазин",
+            "url": "/shop",
             "visible": true
         },
         {
             "id": 4,
-            "label": "Featured Neighborhoods",
-            "url": "/neighborhood",
-            "visible": true
-        },
-        {
-            "id": 5,
-            "label": "Standard Features",
-            "url": "/features",
-            "visible": true
-        },
-        {
-            "id": 6,
-            "label": "Testimonials",
-            "url": "/testimonials",
+            "label": "Виды Работ",
+            "url": "/works",
             "visible": true
         },
         {
             "id": 7,
-            "label": "Contact",
+            "label": "Свяжитесь с Нами!",
             "url": "/contact",
             "visible": true
         }

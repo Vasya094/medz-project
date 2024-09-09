@@ -6,6 +6,7 @@ export default interface House {
 	thumbnail: CmsMedia
 	title: string
 	bedrooms: number
+	rentPrice: number
 	fullBathrooms: number
 	halfBathrooms: number
 	squareFeet: number

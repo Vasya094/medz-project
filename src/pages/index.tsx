@@ -1,7 +1,6 @@
 import { Box, Heading, Stack, VStack } from '@chakra-ui/react'
 import type { GetStaticProps } from 'next'
 import SiteInformation from '../types/CmsSingleTypes/siteInformation'
-import getData, { getSiteInfo } from '../utils/data'
 import Hero from '../components/Hero'
 import Container from '../components/Container'
 import Layout from '../components/Layout'
@@ -12,6 +11,7 @@ import Phone from '../components/Phone'
 import TestimonialCard from '../components/TestimonialCard'
 import SEO from '../components/SEO'
 import { homePage, siteInfo } from '../../bd'
+import WhatsappPhone from '../components/WhatsappPhone'
 
 type Props = {
 	homePage: HomePageType
@@ -30,6 +30,7 @@ const HomePage = ({ homePage, siteInfo }: Props) => {
 						<Box width={['full', '55%']} mt={'3rem'} mr={[0, '4rem']}>
 							<CmsRichText text={homePage.pageBody} siteInfo={siteInfo} />
 							<Phone siteInfo={siteInfo} />
+							<WhatsappPhone siteInfo={siteInfo} />
 						</Box>
 						<Box width={['full', '45%']}>
 							<ContactForm
