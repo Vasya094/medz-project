@@ -8,7 +8,7 @@ export const contactPage = {
 }
 
 export const siteInfo = {
-    "phone": "89376406449",
+    "phone": "89378207707",
     "WhatsappPhone": "89378207707",
     "tgPhone": "Vasya95ast",
     "companyLegalName": "Williams Custom Homes, LLC",
