@@ -1,6 +1,5 @@
 import { Box, Button, Flex, Text, VStack } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
-import Head from 'next/head'
 import SiteInformation from '../types/CmsSingleTypes/siteInformation'
 import { FaArrowLeft } from 'react-icons/fa'
 import { GetStaticProps } from 'next'
@@ -34,7 +33,7 @@ const PageNotFound = ({ siteInfo }: Props) => {
 						backgroundColor={'rgba(0, 0, 0, 0.5)'}
 					>
 						<Text align={'center'} color={'white'} fontSize={'2.5rem'}>
-							😕 Page Not Found
+							😕 Страница не найдена или в процессе разработки
 						</Text>
 						<Button
 							color={'white'}
@@ -43,7 +42,7 @@ const PageNotFound = ({ siteInfo }: Props) => {
 							_hover={{ backgroundColor: 'brandDark' }}
 							onClick={() => router.back()}
 						>
-							Back
+							Назад
 						</Button>
 					</VStack>
 				</Flex>

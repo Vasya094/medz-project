@@ -20,9 +20,9 @@ export const siteInfo = {
     "phone": "89378207707",
     "tgPhone": "Vasya95ast",
     "WhatsappPhone": "89378207707",
-    "companyLegalName": "Williams Custom Homes, LLC",
-    "websiteName": "Williams Custom Homes",
-    "location": "Stark County, Ohio",
+    "companyLegalName": "Строительно-монтажный Холдинг",
+    "websiteName": "Ug Tool Rent",
+    "location": "Астрахань ЮФО РФ",
     "formspreeContactFormId": "mdobwbql",
     "createdAt": "2023-01-05T17:12:15.629Z",
     "updatedAt": "2023-03-12T18:16:57.432Z",
@@ -204,7 +204,7 @@ export const siteInfo = {
                 "formats": {
                     "large": {
                         "ext": ".jpg",
-                        "url": "https://cwaprwdhthpkldgwaysx.supabase.co/storage/v1/object/public/strapi-uploads/large_john.jpg-235a5b602da39bfa77c423d4895f1371.jpg",
+                        "url": "https://fs.kinomania.ru/file/person/6/8a/68a66d8e95bf81df24ad7be44515cfa5.jpeg",
                         "hash": "235a5b602da39bfa77c423d4895f1371",
                         "mime": "image/jpeg",
                         "name": "large_john.jpg",
@@ -215,7 +215,7 @@ export const siteInfo = {
                     },
                     "small": {
                         "ext": ".jpg",
-                        "url": "https://cwaprwdhthpkldgwaysx.supabase.co/storage/v1/object/public/strapi-uploads/small_john.jpg-eb158d0a59d5c6dbb1230d29656953a2.jpg",
+                        "url": "https://fs.kinomania.ru/file/person/6/8a/68a66d8e95bf81df24ad7be44515cfa5.jpeg",
                         "hash": "eb158d0a59d5c6dbb1230d29656953a2",
                         "mime": "image/jpeg",
                         "name": "small_john.jpg",
@@ -226,7 +226,7 @@ export const siteInfo = {
                     },
                     "medium": {
                         "ext": ".jpg",
-                        "url": "https://cwaprwdhthpkldgwaysx.supabase.co/storage/v1/object/public/strapi-uploads/medium_john.jpg-e61a19769972dea78a15cc48d7f68f22.jpg",
+                        "url": "https://fs.kinomania.ru/file/person/6/8a/68a66d8e95bf81df24ad7be44515cfa5.jpeg",
                         "hash": "e61a19769972dea78a15cc48d7f68f22",
                         "mime": "image/jpeg",
                         "name": "medium_john.jpg",
@@ -237,7 +237,7 @@ export const siteInfo = {
                     },
                     "xlarge": {
                         "ext": ".jpg",
-                        "url": "https://cwaprwdhthpkldgwaysx.supabase.co/storage/v1/object/public/strapi-uploads/xlarge_john.jpg-d7938135e4895a11872fc0ff5dbae0db.jpg",
+                        "url": "https://fs.kinomania.ru/file/person/6/8a/68a66d8e95bf81df24ad7be44515cfa5.jpeg",
                         "hash": "d7938135e4895a11872fc0ff5dbae0db",
                         "mime": "image/jpeg",
                         "name": "xlarge_john.jpg",
@@ -248,7 +248,7 @@ export const siteInfo = {
                     },
                     "xsmall": {
                         "ext": ".jpg",
-                        "url": "https://cwaprwdhthpkldgwaysx.supabase.co/storage/v1/object/public/strapi-uploads/xsmall_john.jpg-eb9b1a9b2df69f320c05b64a990f1277.jpg",
+                        "url": "https://fs.kinomania.ru/file/person/6/8a/68a66d8e95bf81df24ad7be44515cfa5.jpeg",
                         "hash": "eb9b1a9b2df69f320c05b64a990f1277",
                         "mime": "image/jpeg",
                         "name": "xsmall_john.jpg",
@@ -259,7 +259,7 @@ export const siteInfo = {
                     },
                     "thumbnail": {
                         "ext": ".jpg",
-                        "url": "https://cwaprwdhthpkldgwaysx.supabase.co/storage/v1/object/public/strapi-uploads/thumbnail_john.jpg-25bbe75f726d0f42b80491a5c4e086a1.jpg",
+                        "url": "https://fs.kinomania.ru/file/person/6/8a/68a66d8e95bf81df24ad7be44515cfa5.jpeg",
                         "hash": "25bbe75f726d0f42b80491a5c4e086a1",
                         "mime": "image/jpeg",
                         "name": "thumbnail_john.jpg",

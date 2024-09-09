@@ -1,4 +1,4 @@
-import {Box, Heading, HStack, Text, useMediaQuery} from '@chakra-ui/react'
+import {Box, Heading, HStack, Text, Image, useMediaQuery} from '@chakra-ui/react'
 import React from 'react'
 import House from '../types/CmsCollectionTypes/house'
 import { FaRubleSign } from "react-icons/fa";
@@ -23,7 +23,7 @@ const HouseCard = ({ house }: Props) => {
 	}
 
 	return (
-		<Link href={'/gallery/' + house.id} passHref legacyBehavior>
+		<Link href={'/rental/' + house.id} passHref legacyBehavior>
 			<Box
 				as={'a'}
 				rounded={'xl'}
@@ -33,18 +33,19 @@ const HouseCard = ({ house }: Props) => {
 				style={{ boxShadow: theme.boxShadow }}
 				_hover={{ backgroundColor: 'brandLight', cursor: 'pointer' }}
 			>
-				<Box
+				<Image
 					height={192}
 					width={'full'}
 					rounded={'lg'}
-					backgroundImage={`url(${encodeURI(house.thumbnail.data.attributes.formats.small?.url ?? house.thumbnail.data.attributes.url)})`}
+					alt={house.description}
+					src={encodeURI(house.thumbnail.data.attributes.formats.small?.url ?? house.thumbnail.data.attributes.url)}
 					backgroundPosition={'center'}
 					backgroundColor={'#ddd'}
 					backgroundSize={'contain'}
 					backgroundRepeat={'no-repeat'}
 					position={'relative'}
 				>
-				</Box>
+				</Image>
 
 				<HStack
 					mt={'0.75rem'}
