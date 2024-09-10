@@ -19,14 +19,14 @@ export const siteInfo = {
     "updatedAt": "2023-03-12T18:16:57.432Z",
     "publishedAt": "2023-01-05T17:12:18.979Z",
     "footerLeft": "<p>[location]<br>[phone]</p><p>Copyright © [current_year] [company_legal_name]</p>",
-    "footerRight": "<p>Exclusively Marketed by:<br><a href=\"https://johnwilliamshomes.com\">John A. Williams</a><br>RE/MAX Edge Realty</p>",
-    "realEstateWebsite": "https://johnwilliamshomes.com",
+    "footerRight": "<p>География:<br>Астраханская Волгоградская Ростовская области Дагестан Чечня Калмыкия Ингушетия.<br>РФ</p>",
+    "realEstateWebsite": "https://wa.me/+79378207707",
     "logo": {
         "data": {
             "id": 10,
             "attributes": {
                 "name": "logo.svg",
-                "alternativeText": "Williams Custom Homes Logo",
+                "alternativeText": "Астрахань Прокат Строительного Инструмента",
                 "caption": null,
                 "width": 297,
                 "height": 62,
@@ -58,7 +58,7 @@ export const siteInfo = {
                 "ext": ".ico",
                 "mime": "image/vnd.microsoft.icon",
                 "size": 15.09,
-                "url": "https://cwaprwdhthpkldgwaysx.supabase.co/storage/v1/object/public/strapi-uploads/favicon.ico-379e44b1343fd1523cefda57c31e6941.ico",
+                "url": "https://svgshare.com/i/1AFZ.svg",
                 "previewUrl": null,
                 "provider": "strapi-provider-upload-supabase",
                 "provider_metadata": null,
@@ -90,6 +90,12 @@ export const siteInfo = {
             "id": 4,
             "label": "Виды Работ",
             "url": "/works",
+            "visible": true
+        },
+        {
+            "id": 87,
+            "label": "О нас",
+            "url": "/about",
             "visible": true
         },
         {
@@ -188,7 +194,7 @@ export const siteInfo = {
             "id": 29,
             "attributes": {
                 "name": "john.jpg",
-                "alternativeText": "John Williams",
+                "alternativeText": "Прокат Техники Астрахань",
                 "caption": null,
                 "width": 2289,
                 "height": 1831,

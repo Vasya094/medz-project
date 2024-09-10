@@ -40,7 +40,7 @@ const HomePage = ({ homePage, siteInfo }: Props) => {
 						</Box>
 					</Stack>
 					{/*<Heading mt={'2rem'}>{homePage.featuredTestimonialsHeading}</Heading>*/}
-					<Heading mt={'2rem'}>Вкраце о нас</Heading>
+					<Heading mt={'2rem'}>Вкратце о нас</Heading>
 					<VStack spacing={'3rem'} my={'3rem'}>ccvccv
 						{/*{homePage.featuredTestimonials.data.map(*/}
 						{/*	(testimonialData, index) => (*/}

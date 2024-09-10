@@ -15,6 +15,7 @@ import Container from './Container'
 import Link from 'next/link'
 import SiteInformation from '../types/CmsSingleTypes/siteInformation'
 import NavbarItem from '../types/navbarItem'
+import mainLogo from '../../public/images/mainLogo.svg'
 
 type Props = {
 	siteInfo: SiteInformation
@@ -41,7 +42,7 @@ const Navbar = ({ siteInfo }: Props) => {
 								}}
 							>
 								<Image
-									src={siteInfo.logo.data.attributes.url}
+									src={mainLogo.src}
 									alt={siteInfo.logo.data.attributes.alternativeText}
 									h='50%'
 								></Image>
