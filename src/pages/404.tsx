@@ -1,11 +1,11 @@
-import { Box, Button, Flex, Text, VStack } from '@chakra-ui/react'
+import { Button, Flex, Text, VStack } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 import SiteInformation from '../types/CmsSingleTypes/siteInformation'
 import { FaArrowLeft } from 'react-icons/fa'
 import { GetStaticProps } from 'next'
-import { getSiteInfo } from '../utils/data'
 import SEO from '../components/SEO'
 import Layout from '../components/Layout'
+import {siteInfo} from "../../bd";
 
 type Props = {
 	siteInfo: SiteInformation
@@ -52,7 +52,7 @@ const PageNotFound = ({ siteInfo }: Props) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-	const siteInfo = await getSiteInfo()
+	// const siteInfo = await getSiteInfo()
 
 	return {
 		props: { siteInfo },

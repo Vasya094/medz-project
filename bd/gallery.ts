@@ -566,6 +566,110 @@ export const houses = [
         "bedrooms": 3,
         "halfBathrooms": 1,
         "squareFeet": 1700,
+        "rentPrice": 1200,
+        "createdAt": "2023-03-14T15:46:38.969Z",
+        "updatedAt": "2023-03-16T01:59:43.245Z",
+        "publishedAt": "2023-03-14T16:05:14.954Z",
+        "fullBathrooms": 2,
+        "title": "Генератор бензиновый Элитечь 2 кВт",
+        "description": "Бензиновый генератор, бензогенератор",
+        "virtualTourLink": "https://www.zillow.com/view-3d-home/88684b95-4afa-49e9-9448-bf2442899945",
+        "thumbnail": {
+            "data": {
+                "id": 30,
+                "attributes": {
+                    "name": "1700-front.jpg",
+                    "alternativeText": null,
+                    "caption": null,
+                    "width": 4032,
+                    "height": 3024,
+                    "formats": {
+                        "large": {
+                            "ext": ".jpg",
+                            "url": "https://i.postimg.cc/LXGp9kxz/Whats-App-Image-2024-09-07-at-23-15-35.jpg",
+                            "hash": "15e7952df2745e9ae1daf2e596a05c44",
+                            "mime": "image/jpeg",
+                            "name": "large_1700-front.jpg",
+                            "path": null,
+                            "size": 106.05,
+                            "width": 1000,
+                            "height": 750
+                        },
+                        "small": {
+                            "ext": ".jpg",
+                            "url": "https://i.postimg.cc/LXGp9kxz/Whats-App-Image-2024-09-07-at-23-15-35.jpg",
+                            "hash": "893feaa83427c36d741a465bf16201e2",
+                            "mime": "image/jpeg",
+                            "name": "small_1700-front.jpg",
+                            "path": null,
+                            "size": 29.95,
+                            "width": 500,
+                            "height": 375
+                        },
+                        "medium": {
+                            "ext": ".jpg",
+                            "url": "https://i.postimg.cc/LXGp9kxz/Whats-App-Image-2024-09-07-at-23-15-35.jpg",
+                            "hash": "fe305cbeff022d8b5fc3547c0f2b48f3",
+                            "mime": "image/jpeg",
+                            "name": "medium_1700-front.jpg",
+                            "path": null,
+                            "size": 61.57,
+                            "width": 750,
+                            "height": 563
+                        },
+                        "xlarge": {
+                            "ext": ".jpg",
+                            "url": "https://i.postimg.cc/LXGp9kxz/Whats-App-Image-2024-09-07-at-23-15-35.jpg",
+                            "hash": "861d1a8c404ef249c535cb17da59079e",
+                            "mime": "image/jpeg",
+                            "name": "xlarge_1700-front.jpg",
+                            "path": null,
+                            "size": 339.66,
+                            "width": 1920,
+                            "height": 1440
+                        },
+                        "xsmall": {
+                            "ext": ".jpg",
+                            "url": "https://i.postimg.cc/LXGp9kxz/Whats-App-Image-2024-09-07-at-23-15-35.jpg",
+                            "hash": "471a382162434fb94c0542beeed634cb",
+                            "mime": "image/jpeg",
+                            "name": "xsmall_1700-front.jpg",
+                            "path": null,
+                            "size": 1.28,
+                            "width": 64,
+                            "height": 48
+                        },
+                        "thumbnail": {
+                            "ext": ".jpg",
+                            "url": "https://i.postimg.cc/LXGp9kxz/Whats-App-Image-2024-09-07-at-23-15-35.jpg",
+                            "hash": "e391d2a69df016d1c19a3d4201cccf80",
+                            "mime": "image/jpeg",
+                            "name": "thumbnail_1700-front.jpg",
+                            "path": null,
+                            "size": 6.9,
+                            "width": 208,
+                            "height": 156
+                        }
+                    },
+                    "hash": "5a098da66a56bf3c59f9f1f8f04f0e60",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 633.61,
+                    "url": "https://i.postimg.cc/LXGp9kxz/Whats-App-Image-2024-09-07-at-23-15-35.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-supabase",
+                    "provider_metadata": null,
+                    "createdAt": "2023-03-14T15:45:56.446Z",
+                    "updatedAt": "2023-03-14T15:45:56.446Z"
+                }
+            }
+        },
+        "id": 91
+    },
+    {
+        "bedrooms": 3,
+        "halfBathrooms": 1,
+        "squareFeet": 1700,
         "rentPrice": 2500,
         "createdAt": "2023-03-14T15:46:38.969Z",
         "updatedAt": "2023-03-16T01:59:43.245Z",
@@ -1039,6 +1143,99 @@ export const houses = [
                     "mime": "image/jpeg",
                     "size": 361.02,
                     "url": "https://i.postimg.cc/Wb3zqLQp/Whats-App-Image-2024-09-07-at-23-16-20.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-supabase",
+                    "provider_metadata": null,
+                    "createdAt": "2023-03-14T16:16:17.460Z",
+                    "updatedAt": "2023-03-14T16:16:17.460Z"
+                }
+            }
+        },
+        "id": 51
+    },
+    {
+        "bedrooms": 3,
+        "halfBathrooms": 0,
+        "squareFeet": 1583,
+        "rentPrice": 2500,
+        "createdAt": "2023-03-14T16:18:16.748Z",
+        "updatedAt": "2023-03-16T02:03:01.377Z",
+        "publishedAt": "2023-03-14T16:18:18.144Z",
+        "fullBathrooms": 2,
+        "title": "Генератор бензиновый Элитечь 6 кВт",
+        "description": "Бензиновый генератор, бензогенератор,  бесперебойная поставка электрической энергии. Используется на строительных площадках, в помещениях, в которых выполняются работы по ремонту, в частных домах и на дачах.",
+        "virtualTourLink": null,
+        "thumbnail": {
+            "data": {
+                "id": 33,
+                "attributes": {
+                    "name": "IMG_0146.JPG",
+                    "alternativeText": null,
+                    "caption": null,
+                    "width": 1632,
+                    "height": 1224,
+                    "formats": {
+                        "large": {
+                            "ext": ".JPG",
+                            "url": "https://i.postimg.cc/KjnzV7L8/Whats-App-Image-2024-09-07-at-23-15-05.jpg",
+                            "hash": "b40fcc2c316aedafa83f0345e2e6151b",
+                            "mime": "image/jpeg",
+                            "name": "large_IMG_0146.JPG",
+                            "path": null,
+                            "size": 147.51,
+                            "width": 1000,
+                            "height": 750
+                        },
+                        "small": {
+                            "ext": ".JPG",
+                            "url": "https://i.postimg.cc/KjnzV7L8/Whats-App-Image-2024-09-07-at-23-15-05.jpg",
+                            "hash": "45eff051239d3f2ee5969a9cee9856c7",
+                            "mime": "image/jpeg",
+                            "name": "small_IMG_0146.JPG",
+                            "path": null,
+                            "size": 40,
+                            "width": 500,
+                            "height": 375
+                        },
+                        "medium": {
+                            "ext": ".JPG",
+                            "url": "https://i.postimg.cc/KjnzV7L8/Whats-App-Image-2024-09-07-at-23-15-05.jpg",
+                            "hash": "920cb5798a64220cb0ce635b5af7adbb",
+                            "mime": "image/jpeg",
+                            "name": "medium_IMG_0146.JPG",
+                            "path": null,
+                            "size": 86.62,
+                            "width": 750,
+                            "height": 563
+                        },
+                        "xsmall": {
+                            "ext": ".JPG",
+                            "url": "https://i.postimg.cc/KjnzV7L8/Whats-App-Image-2024-09-07-at-23-15-05.jpg",
+                            "hash": "309264683748a07949d0a3eeea05ca71",
+                            "mime": "image/jpeg",
+                            "name": "xsmall_IMG_0146.JPG",
+                            "path": null,
+                            "size": 1.27,
+                            "width": 64,
+                            "height": 48
+                        },
+                        "thumbnail": {
+                            "ext": ".JPG",
+                            "url": "https://i.postimg.cc/KjnzV7L8/Whats-App-Image-2024-09-07-at-23-15-05.jpg",
+                            "hash": "6df7183864ffc2b66a8edc2d977005d2",
+                            "mime": "image/jpeg",
+                            "name": "thumbnail_IMG_0146.JPG",
+                            "path": null,
+                            "size": 8.5,
+                            "width": 208,
+                            "height": 156
+                        }
+                    },
+                    "hash": "fd9c36a7ca9f9a83862c72ced39862d4",
+                    "ext": ".JPG",
+                    "mime": "image/jpeg",
+                    "size": 361.02,
+                    "url": "https://i.postimg.cc/KjnzV7L8/Whats-App-Image-2024-09-07-at-23-15-05.jpg",
                     "previewUrl": null,
                     "provider": "strapi-provider-upload-supabase",
                     "provider_metadata": null,
@@ -2054,6 +2251,110 @@ export const houses = [
                 }
             }
         },
+        "id": 66
+    },
+    {
+        "bedrooms": 3,
+        "halfBathrooms": 1,
+        "squareFeet": 2304,
+        "rentPrice": 4500,
+        "createdAt": "2023-03-16T13:00:44.830Z",
+        "updatedAt": "2023-03-17T00:13:35.606Z",
+        "publishedAt": "2023-03-17T00:11:37.226Z",
+        "fullBathrooms": 2,
+        "title": "Генератор бензиновый 3х фазный 10квт",
+        "description": "Бензогенератор 3х фазный 10квт",
+        "virtualTourLink": "https://www.zillow.com/view-3d-home/b7aa4462-6361-4215-b7e8-c4fea104cd38?utm_source=dashboard",
+        "thumbnail": {
+            "data": {
+                "id": 155,
+                "attributes": {
+                    "name": "DSC08392-Edit.jpg",
+                    "alternativeText": null,
+                    "caption": null,
+                    "width": 7008,
+                    "height": 4672,
+                    "formats": {
+                        "large": {
+                            "ext": ".jpg",
+                            "url": "https://i.postimg.cc/PfzTg59J/Whats-App-Image-2024-09-07-at-23-13-26.jpg",
+                            "hash": "476ed4349d17c91036c3525c3ca439c8",
+                            "mime": "image/jpeg",
+                            "name": "large_DSC08392-Edit.jpg",
+                            "path": null,
+                            "size": 134.13,
+                            "width": 1000,
+                            "height": 667
+                        },
+                        "small": {
+                            "ext": ".jpg",
+                            "url": "https://i.postimg.cc/PfzTg59J/Whats-App-Image-2024-09-07-at-23-13-26.jpg",
+                            "hash": "a25307e0c91a146311d209d066075d40",
+                            "mime": "image/jpeg",
+                            "name": "small_DSC08392-Edit.jpg",
+                            "path": null,
+                            "size": 35.74,
+                            "width": 500,
+                            "height": 333
+                        },
+                        "medium": {
+                            "ext": ".jpg",
+                            "url": "https://i.postimg.cc/PfzTg59J/Whats-App-Image-2024-09-07-at-23-13-26.jpg",
+                            "hash": "f8b72199b74bfdd1d3be8890ed969271",
+                            "mime": "image/jpeg",
+                            "name": "medium_DSC08392-Edit.jpg",
+                            "path": null,
+                            "size": 75.88,
+                            "width": 750,
+                            "height": 500
+                        },
+                        "xlarge": {
+                            "ext": ".jpg",
+                            "url": "https://i.postimg.cc/PfzTg59J/Whats-App-Image-2024-09-07-at-23-13-26.jpg",
+                            "hash": "c54c56f94bebceba9c2adda6e05138ae",
+                            "mime": "image/jpeg",
+                            "name": "xlarge_DSC08392-Edit.jpg",
+                            "path": null,
+                            "size": 476.17,
+                            "width": 1920,
+                            "height": 1280
+                        },
+                        "xsmall": {
+                            "ext": ".jpg",
+                            "url": "https://i.postimg.cc/PfzTg59J/Whats-App-Image-2024-09-07-at-23-13-26.jpg",
+                            "hash": "868b9a2345ad9b4b530dbf75f97e9d55",
+                            "mime": "image/jpeg",
+                            "name": "xsmall_DSC08392-Edit.jpg",
+                            "path": null,
+                            "size": 1.15,
+                            "width": 64,
+                            "height": 43
+                        },
+                        "thumbnail": {
+                            "ext": ".jpg",
+                            "url": "https://i.postimg.cc/PfzTg59J/Whats-App-Image-2024-09-07-at-23-13-26.jpg",
+                            "hash": "bf474278688acaae9383f3928b969789",
+                            "mime": "image/jpeg",
+                            "name": "thumbnail_DSC08392-Edit.jpg",
+                            "path": null,
+                            "size": 9.38,
+                            "width": 234,
+                            "height": 156
+                        }
+                    },
+                    "hash": "05e87cd538f005928f0d7ed0f5c1d2a4",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 3761.41,
+                    "url": "https://i.postimg.cc/PfzTg59J/Whats-App-Image-2024-09-07-at-23-13-26.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-supabase",
+                    "provider_metadata": null,
+                    "createdAt": "2023-03-16T12:59:49.900Z",
+                    "updatedAt": "2023-03-16T12:59:49.900Z"
+                }
+            }
+        },
         "id": 6
     },
     {
@@ -2471,5 +2772,109 @@ export const houses = [
             }
         },
         "id": 9
+    },
+    {
+        "bedrooms": 3,
+        "halfBathrooms": 0,
+        "squareFeet": 1522,
+        "rentPrice": 2000,
+        "createdAt": "2024-02-13T15:28:31.167Z",
+        "updatedAt": "2024-02-13T21:02:11.683Z",
+        "publishedAt": "2024-02-13T15:30:35.550Z",
+        "fullBathrooms": 2,
+        "title": "Генератор бензиновый Хутер 5квт",
+        "description": "Бензиновый генератор, бензогенератор,  бесперебойная поставка электрической энергии.",
+        "virtualTourLink": null,
+        "thumbnail": {
+            "data": {
+                "id": 236,
+                "attributes": {
+                    "name": "IMG_1547.jpg",
+                    "alternativeText": "Front of 1522 SF Ranch Home",
+                    "caption": null,
+                    "width": 4032,
+                    "height": 3024,
+                    "formats": {
+                        "large": {
+                            "ext": ".jpg",
+                            "url": "https://i.postimg.cc/VkHYKZTF/Whats-App-Image-2024-09-07-at-23-14-17.jpg",
+                            "hash": "be06f86cdcfc5634a9d35fbbfa9758c3",
+                            "mime": "image/jpeg",
+                            "name": "large_IMG_1547.jpg",
+                            "path": null,
+                            "size": 148.54,
+                            "width": 1000,
+                            "height": 750
+                        },
+                        "small": {
+                            "ext": ".jpg",
+                            "url": "https://i.postimg.cc/VkHYKZTF/Whats-App-Image-2024-09-07-at-23-14-17.jpg",
+                            "hash": "53d717a691b9fe83ee9e29935a188eff",
+                            "mime": "image/jpeg",
+                            "name": "small_IMG_1547.jpg",
+                            "path": null,
+                            "size": 39.13,
+                            "width": 500,
+                            "height": 375
+                        },
+                        "medium": {
+                            "ext": ".jpg",
+                            "url": "https://i.postimg.cc/VkHYKZTF/Whats-App-Image-2024-09-07-at-23-14-17.jpg",
+                            "hash": "d3da3f2d2ab15335b7cf8c1eaa3d01d5",
+                            "mime": "image/jpeg",
+                            "name": "medium_IMG_1547.jpg",
+                            "path": null,
+                            "size": 83.98,
+                            "width": 750,
+                            "height": 563
+                        },
+                        "xlarge": {
+                            "ext": ".jpg",
+                            "url": "https://i.postimg.cc/VkHYKZTF/Whats-App-Image-2024-09-07-at-23-14-17.jpg",
+                            "hash": "8f74e11d493f0d992447d2393d39ffe0",
+                            "mime": "image/jpeg",
+                            "name": "xlarge_IMG_1547.jpg",
+                            "path": null,
+                            "size": 500.53,
+                            "width": 1920,
+                            "height": 1440
+                        },
+                        "xsmall": {
+                            "ext": ".jpg",
+                            "url": "https://i.postimg.cc/VkHYKZTF/Whats-App-Image-2024-09-07-at-23-14-17.jpg",
+                            "hash": "28802f230950a60bda5e64ff2ec5968f",
+                            "mime": "image/jpeg",
+                            "name": "xsmall_IMG_1547.jpg",
+                            "path": null,
+                            "size": 1.27,
+                            "width": 64,
+                            "height": 48
+                        },
+                        "thumbnail": {
+                            "ext": ".jpg",
+                            "url": "https://i.postimg.cc/VkHYKZTF/Whats-App-Image-2024-09-07-at-23-14-17.jpg",
+                            "hash": "ff7008e5a2fe014db4be657aea5472a6",
+                            "mime": "image/jpeg",
+                            "name": "thumbnail_IMG_1547.jpg",
+                            "path": null,
+                            "size": 8.04,
+                            "width": 208,
+                            "height": 156
+                        }
+                    },
+                    "hash": "83f663e210e80e775961a2f5e5d983b3",
+                    "ext": ".jpg",
+                    "mime": "image/jpeg",
+                    "size": 1537.39,
+                    "url": "https://i.postimg.cc/VkHYKZTF/Whats-App-Image-2024-09-07-at-23-14-17.jpg",
+                    "previewUrl": null,
+                    "provider": "strapi-provider-upload-supabase",
+                    "provider_metadata": null,
+                    "createdAt": "2024-02-13T15:21:09.061Z",
+                    "updatedAt": "2024-02-13T15:24:37.442Z"
+                }
+            }
+        },
+        "id": 99
     }
 ]
