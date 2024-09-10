@@ -8,7 +8,7 @@ export const galleryPage = {
 }
 
 export const siteInfo = {
-    "phone": "89378207707",
+    "phone": "+79378207707",
     "companyLegalName": "Строительно-монтажный Холдинг",
     "websiteName": "Ug Tool Rent",
     "location": "Астрахань ЮФО РФ",

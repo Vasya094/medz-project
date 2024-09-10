@@ -1,8 +1,8 @@
 import SiteInformation from '../types/CmsSingleTypes/siteInformation'
 
 export const formatPhoneNumber = (phoneNumber: string) =>
-	`${phoneNumber.slice(0, 1)} (${phoneNumber.slice(1, 4)}) ${phoneNumber.slice(4, 7)}-${phoneNumber.slice(
-		7
+	`${phoneNumber.slice(0, 2)} (${phoneNumber.slice(2, 5)}) ${phoneNumber.slice(5, 8)}-${phoneNumber.slice(
+		8
 	)}`
 
 export const populateShortCodes = (text: string, siteInfo: SiteInformation) =>

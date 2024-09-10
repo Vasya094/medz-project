@@ -111,8 +111,8 @@ export const homePage = {
 }
 
 export const siteInfo = {
-    "phone": "89378207707",
-    "WhatsappPhone": "89378207707",
+    "phone": "+79378207707",
+    "WhatsappPhone": "+79378207707",
     "tgPhone": "Vasya95ast",
     "companyLegalName": "Строительно-монтажный Холдинг",
     "websiteName": "Ug Tool Rent",
