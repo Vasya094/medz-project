@@ -1,6 +1,6 @@
 export const contactPage = {
     "pageBody": "<h1>Свяжитесь с нами любым удобным Вам способом</h1><p>Есть вопрос или вы хотите начать сотрудничать? Не стесняйтесь позвонить нам или отправить нам сообщение! Неважно, на каком этапе поиска вы находитесь, мы будем рады пообщаться с вами и сообщить вам всю актуальную информацию, цены и новости.</p>",
-    "title": "Contact",
+    "title": "Связь - Аренда строительного инструмента Астрахань",
     "createdAt": "2023-01-05T21:55:28.842Z",
     "updatedAt": "2023-01-05T21:55:31.373Z",
     "publishedAt": "2023-01-05T21:55:31.291Z",
@@ -107,8 +107,8 @@ export const siteInfo = {
     ],
     "globalSeo": {
         "id": 1,
-        "title": "Williams Custom Homes - Stark County New Home Construction & Home Builder - Canton, Massillon, Ohio",
-        "description": "Williams Custom Homes is a Stark County, Ohio, Massillon, Canton area custom home builder.",
+        "title": "Связь - Аренда строительного инструмента - Астрахань",
+        "description": "Аренда и прока строительного инструмента Астрахань, услуги монтажаю",
         "shareImage": {
             "data": {
                 "id": 11,

@@ -9,7 +9,7 @@ export const aboutUsPage = {
      </p> 
      <p>Мы можем полностью взять на себя заботы по решению строительных задач — от согласования этапов работ до их полного выполнения. С нами вы получите надежного партнера, который обеспечит <strong>качественное выполнение всех строительных операций</strong>, начиная с аренды техники и заканчивая установкой систем безопасности.
      Мы всегда готовы адаптироваться под ваши требования и гарантировать высокое качество обслуживания на каждом этапе сотрудничества.</p>`,
-    "title": "About Us",
+    "title": "Подробне - Прокат строительной техники и инструмента",
     "createdAt": "2023-01-05T17:41:26.106Z",
     "updatedAt": "2023-09-20T02:53:58.423Z",
     "publishedAt": "2023-01-05T17:41:29.056Z",
@@ -116,8 +116,8 @@ export const siteInfo = {
     ],
     "globalSeo": {
         "id": 1,
-        "title": "Williams Custom Homes - Stark County New Home Construction & Home Builder - Canton, Massillon, Ohio",
-        "description": "Williams Custom Homes is a Stark County, Ohio, Massillon, Canton area custom home builder.",
+        "title": "Подробне - Прокат строительной техники и инструмента",
+        "description": "Прокат, аренда и продажа строительной техники и инструмента город Астрахань",
         "shareImage": {
             "data": {
                 "id": 11,

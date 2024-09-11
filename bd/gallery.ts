@@ -1,6 +1,6 @@
 export const galleryPage = {
     "pageBody": `<h1>Список Техники В Аренду</h1><p>Мы предлагаем доступные цены на аренду строительной техники и инструментов в Астрахани и области. Наша компания всегда идет навстречу клиентам, обеспечивая высококачественное обслуживание и индивидуальный подход.</p>`,
-    "title": "Прокат инструментов Астрахань",
+    "title": "Список - Прокат инструментов Астрахань",
     "createdAt": "2023-01-05T17:42:02.184Z",
     "updatedAt": "2023-03-17T00:26:46.211Z",
     "publishedAt": "2023-01-05T17:42:04.865Z",
@@ -105,8 +105,8 @@ export const siteInfo = {
     ],
     "globalSeo": {
         "id": 1,
-        "title": "Williams Custom Homes - Stark County New Home Construction & Home Builder - Canton, Massillon, Ohio",
-        "description": "Williams Custom Homes is a Stark County, Ohio, Massillon, Canton area custom home builder.",
+        "title": "Часть ассортимента - Прокат строй техники - Астрахань ЮФО",
+        "description": "Аредна прокат строительных инструментов в городе Астрахань",
         "shareImage": {
             "data": {
                 "id": 11,
@@ -377,7 +377,7 @@ export const houses = [
                 "id": 30,
                 "attributes": {
                     "name": "1700-front.jpg",
-                    "alternativeText": null,
+                    "alternativeText": 'Виброплита Трамбовка Вибротрамбовка',
                     "caption": null,
                     "width": 4032,
                     "height": 3024,
@@ -585,7 +585,7 @@ export const houses = [
                 "id": 30,
                 "attributes": {
                     "name": "1700-front.jpg",
-                    "alternativeText": null,
+                    "alternativeText": 'Бензиновый генератор, бензогенератор',
                     "caption": null,
                     "width": 4032,
                     "height": 3024,
@@ -689,7 +689,7 @@ export const houses = [
                 "id": 30,
                 "attributes": {
                     "name": "1700-front.jpg",
-                    "alternativeText": null,
+                    "alternativeText": 'Бетономешалки, растворосмесители',
                     "caption": null,
                     "width": 4032,
                     "height": 3024,
@@ -793,7 +793,7 @@ export const houses = [
                 "id": 30,
                 "attributes": {
                     "name": "1700-front.jpg",
-                    "alternativeText": null,
+                    "alternativeText": 'Бензиновый отбойный молоток',
                     "caption": null,
                     "width": 4032,
                     "height": 3024,
@@ -897,7 +897,7 @@ export const houses = [
                 "id": 33,
                 "attributes": {
                     "name": "IMG_0146.JPG",
-                    "alternativeText": null,
+                    "alternativeText": 'Виброплита Трамбовка Вибротрамбовка',
                     "caption": null,
                     "width": 1632,
                     "height": 1224,
@@ -990,7 +990,7 @@ export const houses = [
                 "id": 33,
                 "attributes": {
                     "name": "IMG_0146.JPG",
-                    "alternativeText": null,
+                    "alternativeText": 'Виброплита Трамбовка Вибротрамбовка',
                     "caption": null,
                     "width": 1632,
                     "height": 1224,
@@ -1083,7 +1083,7 @@ export const houses = [
                 "id": 33,
                 "attributes": {
                     "name": "IMG_0146.JPG",
-                    "alternativeText": null,
+                    "alternativeText": 'Мозаично-шлифовальная машина',
                     "caption": null,
                     "width": 1632,
                     "height": 1224,
@@ -1169,14 +1169,14 @@ export const houses = [
         "publishedAt": "2023-03-14T16:18:18.144Z",
         "fullBathrooms": 2,
         "title": "Генератор бензиновый Элитечь 6 кВт",
-        "description": "Бензиновый генератор, бензогенератор,  бесперебойная поставка электрической энергии. Используется на строительных площадках, в помещениях, в которых выполняются работы по ремонту, в частных домах и на дачах.",
+        "description": "Бензиновый генератор, бензогенератор, бесперебойная поставка электрической энергии. Используется на строительных площадках, в помещениях, в которых выполняются работы по ремонту, в частных домах и на дачах.",
         "virtualTourLink": null,
         "thumbnail": {
             "data": {
                 "id": 33,
                 "attributes": {
                     "name": "IMG_0146.JPG",
-                    "alternativeText": null,
+                    "alternativeText": 'Бензиновый генератор, бензогенератор',
                     "caption": null,
                     "width": 1632,
                     "height": 1224,
@@ -1269,7 +1269,7 @@ export const houses = [
                 "id": 33,
                 "attributes": {
                     "name": "IMG_0146.JPG",
-                    "alternativeText": null,
+                    "alternativeText": 'Ручные гидравлические тележки',
                     "caption": null,
                     "width": 1632,
                     "height": 1224,
@@ -1362,7 +1362,7 @@ export const houses = [
                 "id": 31,
                 "attributes": {
                     "name": "IMG_1450.JPG",
-                    "alternativeText": null,
+                    "alternativeText": 'Виброплита Трамбовка Вибротрамбовка',
                     "caption": null,
                     "width": 5184,
                     "height": 3456,
@@ -1466,7 +1466,7 @@ export const houses = [
                 "id": 31,
                 "attributes": {
                     "name": "IMG_1450.JPG",
-                    "alternativeText": null,
+                    "alternativeText": 'Мотоблок Нева',
                     "caption": null,
                     "width": 5184,
                     "height": 3456,
@@ -1570,7 +1570,7 @@ export const houses = [
                 "id": 31,
                 "attributes": {
                     "name": "IMG_1450.JPG",
-                    "alternativeText": null,
+                    "alternativeText": 'Мини-самосвал, думпер, бензиновый',
                     "caption": null,
                     "width": 5184,
                     "height": 3456,
@@ -1674,7 +1674,7 @@ export const houses = [
                 "id": 31,
                 "attributes": {
                     "name": "IMG_1450.JPG",
-                    "alternativeText": null,
+                    "alternativeText": 'Резчик швов, швонарезчик, бетонорез',
                     "caption": null,
                     "width": 5184,
                     "height": 3456,
@@ -1778,7 +1778,7 @@ export const houses = [
                 "id": 11,
                 "attributes": {
                     "name": "site-image.jpg",
-                    "alternativeText": null,
+                    "alternativeText": 'Виброплита',
                     "caption": null,
                     "width": 1024,
                     "height": 768,
@@ -1871,7 +1871,7 @@ export const houses = [
                 "id": 11,
                 "attributes": {
                     "name": "site-image.jpg",
-                    "alternativeText": null,
+                    "alternativeText": 'Плавающая виброрейка бензиновая"',
                     "caption": null,
                     "width": 1024,
                     "height": 768,
@@ -1957,7 +1957,7 @@ export const houses = [
         "publishedAt": "2023-03-12T01:47:15.388Z",
         "fullBathrooms": 2,
         "title": "Виброплита Зитрек 160кг",
-        "description": "<p>Unique split bedroom design with 9-foot ceilings and beamed vaulted ceilings in great room and master bedroom.</p>",
+        "description": "Виброплита Трамбовка Вибротрамбовка",
         "virtualTourLink": "https://www.zillow.com/view-3d-home/51a43b12-ff4f-40a9-8f73-96602b9ed179",
         "thumbnail": {
             "data": {
@@ -2380,7 +2380,7 @@ export const houses = [
                 "id": 155,
                 "attributes": {
                     "name": "DSC08392-Edit.jpg",
-                    "alternativeText": null,
+                    "alternativeText": 'Виброплита',
                     "caption": null,
                     "width": 7008,
                     "height": 4672,
@@ -2477,14 +2477,14 @@ export const houses = [
         "publishedAt": "2024-02-13T15:30:35.550Z",
         "fullBathrooms": 2,
         "title": "Виброплита Тсс 420кг",
-        "description": "<p>Modern design with practical floor plan. loads of closet space/storage and a lovely covered back porch.</p>",
+        "description": "Виброплита Трамбовка Вибротрамбовка",
         "virtualTourLink": null,
         "thumbnail": {
             "data": {
                 "id": 236,
                 "attributes": {
                     "name": "IMG_1547.jpg",
-                    "alternativeText": "Front of 1522 SF Ranch Home",
+                    "alternativeText": "Виброплита Трамбовка Вибротрамбовка",
                     "caption": null,
                     "width": 4032,
                     "height": 3024,
@@ -2588,7 +2588,7 @@ export const houses = [
                 "id": 236,
                 "attributes": {
                     "name": "IMG_1547.jpg",
-                    "alternativeText": "Front of 1522 SF Ranch Home",
+                    "alternativeText": "Виброплита Трамбовка Вибротрамбовка",
                     "caption": null,
                     "width": 4032,
                     "height": 3024,
@@ -2692,7 +2692,7 @@ export const houses = [
                 "id": 236,
                 "attributes": {
                     "name": "IMG_1547.jpg",
-                    "alternativeText": "Front of 1522 SF Ranch Home",
+                    "alternativeText": "Виброплита Трамбовка Вибротрамбовка",
                     "caption": null,
                     "width": 4032,
                     "height": 3024,
@@ -2796,7 +2796,7 @@ export const houses = [
                 "id": 236,
                 "attributes": {
                     "name": "IMG_1547.jpg",
-                    "alternativeText": "Front of 1522 SF Ranch Home",
+                    "alternativeText": "Бензиновый генератор, бензогенератор",
                     "caption": null,
                     "width": 4032,
                     "height": 3024,
