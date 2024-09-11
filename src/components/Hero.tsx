@@ -18,6 +18,8 @@ const Hero = ({
 	primaryCallToActionButtonLink,
 	secondaryCallToActionButtonText,
 	secondaryCallToActionButtonLink,
+	primaryCallToActionButtonLinkSec,
+	primaryCallToActionButtonTextSec,
 }: HomePageType) => {
 	return (
 		<Flex
@@ -52,6 +54,16 @@ const Hero = ({
 							{heroText}
 						</Heading>
 						<Stack direction={['column', 'row']} spacing={['0.5rem', '1rem']}>
+							<Link href={primaryCallToActionButtonLinkSec} passHref legacyBehavior>
+								<Button
+									as={'a'}
+									bg={'brand'}
+									color={'white'}
+									_hover={{ bg: 'brandDark' }}
+								>
+									{primaryCallToActionButtonTextSec}
+								</Button>
+							</Link>
 							<Link href={primaryCallToActionButtonLink} passHref legacyBehavior>
 								<Button
 									as={'a'}

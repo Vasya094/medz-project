@@ -8,6 +8,8 @@ export default interface HomePage {
 	primaryCallToActionButtonLink: string
 	secondaryCallToActionButtonText: string
 	secondaryCallToActionButtonLink: string
+	primaryCallToActionButtonLinkSec: string
+	primaryCallToActionButtonTextSec: string
 	pageBody: string
 	contactFormHeading: string
 	featuredTestimonialsHeading: string
