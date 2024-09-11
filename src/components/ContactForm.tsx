@@ -112,12 +112,11 @@ const ContactForm = ({
 				<Input
 					type="email"
 					name="email"
-					placeholder="Email"
+					placeholder="Email (необязательно)"
 					pattern={emailRegex}
 					value={formState.email}
 					onChange={handleChange}
 					disabled={isSubmitting}
-					required
 				/>
 
 				<PhoneNumberInput
