@@ -14,8 +14,8 @@ const Layout = ({ siteInfo, children }: Props) => {
 		<>
 			<Head>
 				<link rel='shortcut icon' href={siteInfo.favicon.data.attributes.url} />
-				<link rel="icon" href="/public/images/Asset_2.ico" sizes="32x32" />
-				<link rel="icon" href="/public/images/Asset_2.svg" type="image/svg+xml" />
+				<link rel="icon" href="/images/Asset_2.ico" sizes="32x32" />
+				<link rel="icon" href="/images/Asset_2.svg" type="image/svg+xml" />
 			</Head>
 			<Flex direction={'column'} minHeight={'100vh'}>
 				<Navbar siteInfo={siteInfo} />
