@@ -78,6 +78,8 @@ const SEO = ({ seo, siteInfo }: Props) => {
 				key='og:site_name'
 				content={siteInfo.websiteName}
 			/>
+
+			<meta property="og:locale" content="ru_RU" />
 		</Head>
 	)
 }
