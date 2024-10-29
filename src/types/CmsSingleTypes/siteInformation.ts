@@ -8,6 +8,8 @@ export default interface SiteInformation {
 	websiteName: string
 	companyLegalName: string
 	phone: string
+	siteName: string
+	siteUrl: string
 	WhatsappPhone: string
 	tgPhone: string
 	location: string
