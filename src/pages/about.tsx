@@ -1,11 +1,10 @@
 import type { GetStaticProps } from 'next'
 import SiteInformation from '../types/CmsSingleTypes/siteInformation'
-import getData, { getSiteInfo } from '../utils/data'
 import Container from '../components/Container'
 import Layout from '../components/Layout'
 import CmsRichText from '../components/CmsRichText'
 import SimplePage from '../types/CmsSingleTypes/simplePage'
-import { Box } from '@chakra-ui/react'
+import { Box, Heading, VStack } from '@chakra-ui/react'
 import SEO from '../components/SEO'
 import { metaDescriptionFromHtml } from '../utils/pipes'
 import { aboutUsPage, siteInfo } from '../../bd/about'
@@ -16,21 +15,44 @@ type Props = {
 }
 
 const AboutUsPage = ({ aboutUsPage, siteInfo }: Props) => {
-	console.log(siteInfo)
 	return (
 		<>
 			<SEO
 				seo={{
-					title: aboutUsPage.title,
+					title: `About Us - ${siteInfo.siteName}`,
 					description: metaDescriptionFromHtml(aboutUsPage.pageBody),
+					canonical: `${siteInfo.siteUrl}/about`,
+					openGraph: {
+						title: `About Us - ${siteInfo.siteName}`,
+						description: metaDescriptionFromHtml(aboutUsPage.pageBody),
+						type: 'website',
+						url: `${siteInfo.siteUrl}/about`,
+					},
 				}}
 				siteInfo={siteInfo}
 			/>
 			<Layout siteInfo={siteInfo}>
 				<Container thin>
-					<Box mb={'3rem'}>
-						<CmsRichText text={aboutUsPage.pageBody} siteInfo={siteInfo} />
-					</Box>
+					<VStack spacing={8} align="stretch" py={12}>
+						<Heading 
+							as="h1" 
+							size="2xl" 
+							textAlign="center"
+							mb={6}
+						>
+							{aboutUsPage.title}
+						</Heading>
+						<Box 
+							className="about-content"
+							sx={{
+								'& > *:not(:last-child)': {
+									marginBottom: '2rem',
+								},
+							}}
+						>
+							<CmsRichText text={aboutUsPage.pageBody} siteInfo={siteInfo} />
+						</Box>
+					</VStack>
 				</Container>
 			</Layout>
 		</>
@@ -38,11 +60,6 @@ const AboutUsPage = ({ aboutUsPage, siteInfo }: Props) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-	// const [aboutUsPage, siteInfo] = await Promise.all([
-	// 	getData('about-us-page'),
-	// 	getSiteInfo(),
-	// ])
-
 	return {
 		props: { aboutUsPage, siteInfo },
 	}

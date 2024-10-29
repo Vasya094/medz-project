@@ -123,7 +123,7 @@ export const siteInfo = {
     "createdAt": "2023-01-05T17:12:15.629Z",
     "updatedAt": "2023-03-12T18:16:57.432Z",
     "publishedAt": "2023-01-05T17:12:18.979Z",
-    "footerLeft": "<p>[location]<br>[phone]</p><p>Copyright © [current_year] [company_legal_name]</p>",
+    "footerLeft": "<p>[location]<br>[phone]</p>",
     "footerRight": "<p>География:<br>Астраханская Волгоградская Ростовская области Дагестан Чечня Калмыкия Ингушетия<br>РФ</p>",
     "realEstateWebsite": "https://wa.me/+79378207707",
     "logo": {

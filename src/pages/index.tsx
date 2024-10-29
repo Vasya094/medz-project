@@ -1,4 +1,4 @@
-import { Box, Heading, Stack, VStack, Text, List, ListItem, Container as ChakraContainer, Button } from '@chakra-ui/react'
+import { Box, Heading, Stack, VStack, Text, List, ListItem, Container as ChakraContainer } from '@chakra-ui/react'
 import type { GetStaticProps } from 'next'
 import SiteInformation from '../types/CmsSingleTypes/siteInformation'
 import Hero from '../components/Hero'
@@ -101,22 +101,6 @@ const HomePage = ({ homePage, siteInfo }: Props) => {
 										<Text>Профессиональный инструмент для алмазного бурения, резки и демонтажа.</Text>
 									</Box>
 								</Stack>
-							</Box>
-
-							<Box textAlign="center" mt={8}>
-								<Heading as="h3" size="lg" mb={6}>
-									Начните работать с нами
-								</Heading>
-								<Text fontSize="lg" mb={6}>
-									Получите персональное предложение по аренде техники для вашего проекта
-								</Text>
-								<Button 
-									colorScheme="blue" 
-									size="lg"
-									onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
-								>
-									Получить предложение
-								</Button>
 							</Box>
 						</VStack>
 					</ChakraContainer>

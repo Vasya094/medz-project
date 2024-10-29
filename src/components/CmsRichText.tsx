@@ -6,7 +6,6 @@ import styles from '../styles/CmsRichText.module.scss'
 import Link from 'next/link'
 
 const isExternalLink = (url: string) => {
-	// if server side rendering (dev environment)
 	if (typeof window === 'undefined') {
 		return url.startsWith('http')
 	}
@@ -22,17 +21,54 @@ type Props = {
 }
 
 const CmsRichText = ({ text, siteInfo }: Props) => (
-	<Box className={styles.resetCSS}>
+	<Box 
+		className={styles.resetCSS}
+		sx={{
+			'p': {
+				fontSize: 'lg',
+				lineHeight: 1.8,
+				color: 'gray.700',
+			},
+			'h2': {
+				fontSize: '2xl',
+				fontWeight: 'bold',
+				my: 6,
+				color: 'gray.800',
+			},
+			'h3': {
+				fontSize: 'xl',
+				fontWeight: 'semibold',
+				my: 4,
+				color: 'gray.800',
+			},
+			'ul, ol': {
+				pl: 6,
+				my: 4,
+			},
+			'li': {
+				mb: 2,
+			},
+			'a': {
+				color: 'blue.500',
+				textDecoration: 'underline',
+				_hover: {
+					color: 'blue.600',
+				},
+			},
+		}}
+	>
 		{parse(populateShortCodes(text, siteInfo), {
-			// replace <a> tags with Next <Link> components
 			replace: (domNode) => {
 				if (domNode instanceof Element && domNode.name === 'a') {
 					const url = domNode.attribs.href
 					return (
-						<Link href={url} passHref target={isExternalLink(url) ? '_blank' : undefined}>
-
+						<Link 
+							href={url} 
+							passHref 
+							target={isExternalLink(url) ? '_blank' : undefined}
+							rel={isExternalLink(url) ? 'noopener noreferrer' : undefined}
+						>
 							{domToReact(domNode.children)}
-
 						</Link>
 					)
 				}
