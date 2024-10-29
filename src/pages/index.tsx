@@ -1,4 +1,4 @@
-import { Box, Heading, Stack, VStack, Text, List, ListItem } from '@chakra-ui/react'
+import { Box, Heading, Stack, VStack, Text, List, ListItem, Container as ChakraContainer, Button } from '@chakra-ui/react'
 import type { GetStaticProps } from 'next'
 import SiteInformation from '../types/CmsSingleTypes/siteInformation'
 import Hero from '../components/Hero'
@@ -18,20 +18,25 @@ type Props = {
 }
 
 const HomePage = ({ homePage, siteInfo }: Props) => {
-	console.log(siteInfo)
 	return (
 		<>
 			<SEO siteInfo={siteInfo} />
 			<Layout siteInfo={siteInfo}>
 				<Hero {...homePage} />
 				<Container>
-					<Stack direction={['column-reverse', 'row']} spacing={8}>
-						<Box width={['full', '55%']} mt={'3rem'} mr={[0, '4rem']}>
+					<Stack 
+						direction={['column-reverse', 'column-reverse', 'row']} 
+						spacing={[6, 8, 10]}
+						py={[6, 8, 10]}
+					>
+						<Box width={['full', 'full', '55%']} mt={['2rem', '3rem']} mr={[0, 0, '4rem']}>
 							<CmsRichText text={homePage.pageBody} siteInfo={siteInfo} />
-							<Phone siteInfo={siteInfo} />
-							<WhatsappPhone siteInfo={siteInfo} />
+							<Stack direction={['column', 'row']} spacing={4} mt={6}>
+								<Phone siteInfo={siteInfo} />
+								<WhatsappPhone siteInfo={siteInfo} />
+							</Stack>
 						</Box>
-						<Box width={['full', '45%']}>
+						<Box width={['full', 'full', '45%']}>
 							<ContactForm
 								siteInfo={siteInfo}
 								formHeading={homePage.contactFormHeading}
@@ -39,53 +44,82 @@ const HomePage = ({ homePage, siteInfo }: Props) => {
 							/>
 						</Box>
 					</Stack>
-					<Heading as="h2" mt={'2rem'}>Вкратце о нас</Heading>
-					<VStack spacing={'3rem'} my={'3rem'}>
-						<header>
-							<Heading as="h3">Широкий ассортимент строительной техники и инструментов с доставкой и обслуживанием</Heading>
-						</header>
 
-						<section>
-							<Text><strong>Наша компания</strong> — это <strong>клиентоориентированный</strong> партнер, который предлагает надежные решения в области аренды и продажи строительного оборудования и инструментов. Мы гордимся тем, что предоставляем клиентам <strong>широкий ассортимент</strong> продукции, удовлетворяющей любые потребности на строительных площадках, а также берем на себя все заботы по <strong>обслуживанию техники</strong>.</Text>
-						</section>
+					<ChakraContainer maxW="container.lg" py={[8, 10, 12]}>
+						<Heading 
+							as="h2" 
+							fontSize={['2xl', '3xl', '4xl']}
+							textAlign="center"
+							mb={8}
+						>
+							Ваш надежный партнер в строительстве
+						</Heading>
 
-						<section>
-							<Heading as="h4">Клиентоориентированность на первом месте</Heading>
-							<Text>Мы понимаем, что каждый клиент уникален, и наши услуги нацелены на индивидуальный подход к каждому проекту. Наша цель — <strong>облегчить ваш строительный процесс</strong>, предлагая гибкие условия аренды, возможность выбора подходящего оборудования и <strong>полное сопровождение</strong> на всех этапах сотрудничества.</Text>
-						</section>
+						<VStack spacing={8} align="stretch">
+							<Box>
+								<Text fontSize={['lg', 'xl']} lineHeight="tall" textAlign="center" mb={6}>
+									<strong>Более 10 лет</strong> мы помогаем строительным компаниям и частным застройщикам реализовывать проекты любой сложности, предоставляя современную технику и профессиональный сервис.
+								</Text>
+							</Box>
 
-						<section>
-							<Heading as="h4">Широкий ассортимент строительной техники и инструментов</Heading>
-							<Text>Наш ассортимент включает:</Text>
-							<List spacing={2}>
-								<ListItem><strong>Мини-тракторы</strong> для работы на узких или ограниченных участках;</ListItem>
-								<ListItem><strong>Бетономешалки</strong> для строительства;</ListItem>
-								<ListItem><strong>Инструменты для алмазного бурения и резки</strong>;</ListItem>
-								<ListItem>И многое другое.</ListItem>
-							</List>
-							<Text>Мы предлагаем оборудование как для <strong>аренды</strong>, так и для <strong>продажи</strong>, обеспечивая гибкость в зависимости от ваших потребностей.</Text>
-						</section>
+							<Stack direction={['column', 'column', 'row']} spacing={6}>
+								<Box flex="1" p={6} bg="gray.50" borderRadius="lg">
+									<Heading as="h3" size="md" mb={4}>Преимущества аренды</Heading>
+									<List spacing={3}>
+										<ListItem>✓ Экономия на покупке и обслуживании</ListItem>
+										<ListItem>✓ Всегда исправная техника</ListItem>
+										<ListItem>✓ Оперативная замена при необходимости</ListItem>
+										<ListItem>✓ Доставка на объект</ListItem>
+									</List>
+								</Box>
+								<Box flex="1" p={6} bg="gray.50" borderRadius="lg">
+									<Heading as="h3" size="md" mb={4}>Наш сервис</Heading>
+									<List spacing={3}>
+										<ListItem>✓ Техническая консультация</ListItem>
+										<ListItem>✓ Круглосуточная поддержка</ListItem>
+										<ListItem>✓ Обучение персонала</ListItem>
+										<ListItem>✓ Гибкие условия оплаты</ListItem>
+									</List>
+								</Box>
+							</Stack>
 
-						<section>
-							<Heading as="h4">Доставка и обслуживание — все под ключ</Heading>
-							<Text>Мы предлагаем <strong>быструю и надежную доставку</strong> оборудования на строительные объекты, чтобы сэкономить ваше время и ресурсы. Кроме того, наша команда берет на себя <strong>обслуживание техники</strong>, обеспечивая её бесперебойную работу и долгосрочную эксплуатацию. Вы можете быть уверены, что с нами ваш проект будет идти без задержек.</Text>
-						</section>
+							<Box mt={8}>
+								<Heading as="h3" size="lg" mb={6} textAlign="center">
+									Популярное оборудование
+								</Heading>
+								<Stack direction={['column', 'column', 'row']} spacing={6}>
+									<Box flex="1" p={6} borderWidth="1px" borderRadius="lg">
+										<Heading as="h4" size="md" mb={3}>Мини-техника</Heading>
+										<Text>Компактные погрузчики, экскаваторы и тракторы для работы в ограниченном пространстве.</Text>
+									</Box>
+									<Box flex="1" p={6} borderWidth="1px" borderRadius="lg">
+										<Heading as="h4" size="md" mb={3}>Бетонное оборудование</Heading>
+										<Text>Бетономешалки, виброплиты и другое оборудование для бетонных работ.</Text>
+									</Box>
+									<Box flex="1" p={6} borderWidth="1px" borderRadius="lg">
+										<Heading as="h4" size="md" mb={3}>Инструменты</Heading>
+										<Text>Профессиональный инструмент для алмазного бурения, резки и демонтажа.</Text>
+									</Box>
+								</Stack>
+							</Box>
 
-						<section>
-							<Heading as="h4">Почему выбирают нас?</Heading>
-							<List spacing={2}>
-								<ListItem><strong>Высокий уровень сервиса</strong> и индивидуальный подход к каждому клиенту;</ListItem>
-								<ListItem>Широкий выбор техники и инструментов для аренды и покупки;</ListItem>
-								<ListItem><strong>Квалифицированная поддержка</strong> и обслуживание на протяжении всего времени сотрудничества;</ListItem>
-								<ListItem>Быстрая и надежная доставка по региону.</ListItem>
-							</List>
-						</section>
-
-						<footer>
-							<Text>Свяжитесь с нами сегодня, чтобы обсудить ваши потребности и получить персонализированное предложение. Мы всегда рады помочь вам в выборе техники и инструментов для успешного выполнения вашего проекта!</Text>
-							<Text><strong>Наша компания</strong> — ваш надежный партнер в строительстве!</Text>
-						</footer>
-					</VStack>
+							<Box textAlign="center" mt={8}>
+								<Heading as="h3" size="lg" mb={6}>
+									Начните работать с нами
+								</Heading>
+								<Text fontSize="lg" mb={6}>
+									Получите персональное предложение по аренде техники для вашего проекта
+								</Text>
+								<Button 
+									colorScheme="blue" 
+									size="lg"
+									onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+								>
+									Получить предложение
+								</Button>
+							</Box>
+						</VStack>
+					</ChakraContainer>
 				</Container>
 			</Layout>
 		</>

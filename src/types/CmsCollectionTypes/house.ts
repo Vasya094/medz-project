@@ -5,6 +5,7 @@ export default interface House {
 	id: number
 	thumbnail: CmsMedia
 	title: string
+	category: string
 	bedrooms: number
 	rentPrice: number
 	fullBathrooms: number

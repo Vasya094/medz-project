@@ -1,4 +1,15 @@
-import {Box, Heading, HStack, Image, Modal, ModalContent, Text, useDisclosure, useMediaQuery} from '@chakra-ui/react'
+import {
+    Box,
+    Heading,
+    HStack,
+    Image,
+    Modal,
+    ModalContent,
+    Tag,
+    Text,
+    useDisclosure,
+    useMediaQuery
+} from '@chakra-ui/react'
 import React from 'react'
 import House from '../types/CmsCollectionTypes/house'
 import {FaRubleSign} from "react-icons/fa";
@@ -94,6 +105,16 @@ const HouseCard = ({house}: Props) => {
                 <Heading mt={'1rem'} as='h5' size='sm' color={'gray'}>
                     {house.description}
                 </Heading>
+                <HStack mt={2} spacing={2} flexWrap="wrap">
+                    <Tag colorScheme="blue" size="md">
+                        {house.category}
+                    </Tag>
+                    {house.rentPrice && (
+                        <Tag colorScheme="green" size="md">
+                            {house.rentPrice}₽/сутки
+                        </Tag>
+                    )}
+                </HStack>
             </Box>
             {/*</Link>*/}
             {/*</div>*/}
