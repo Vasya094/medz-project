@@ -4,7 +4,7 @@ import Container from '../components/Container'
 import Layout from '../components/Layout'
 import CmsRichText from '../components/CmsRichText'
 import SimplePage from '../types/CmsSingleTypes/simplePage'
-import { Box, Heading, VStack } from '@chakra-ui/react'
+import { Box, Heading } from '@chakra-ui/react'
 import SEO from '../components/SEO'
 import { metaDescriptionFromHtml } from '../utils/pipes'
 import { aboutUsPage, siteInfo } from '../../bd/about'
@@ -21,8 +21,7 @@ const AboutUsPage = ({ aboutUsPage, siteInfo }: Props) => {
 				seo={{
 					title: `About Us - ${siteInfo.siteName}`,
 					description: metaDescriptionFromHtml(aboutUsPage.pageBody),
-					canonical: `${siteInfo.siteUrl}/about`,
-					openGraph: {
+					og: {
 						title: `About Us - ${siteInfo.siteName}`,
 						description: metaDescriptionFromHtml(aboutUsPage.pageBody),
 						type: 'website',
@@ -33,7 +32,7 @@ const AboutUsPage = ({ aboutUsPage, siteInfo }: Props) => {
 			/>
 			<Layout siteInfo={siteInfo}>
 				<Container thin>
-					<VStack spacing={8} align="stretch" py={12}>
+					<Box py={12}>
 						<Heading 
 							as="h1" 
 							size="2xl" 
@@ -52,7 +51,7 @@ const AboutUsPage = ({ aboutUsPage, siteInfo }: Props) => {
 						>
 							<CmsRichText text={aboutUsPage.pageBody} siteInfo={siteInfo} />
 						</Box>
-					</VStack>
+					</Box>
 				</Container>
 			</Layout>
 		</>
