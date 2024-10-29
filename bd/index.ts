@@ -1,5 +1,5 @@
 export const homePage = {
-    "heroText": "Аренда, прокат и продажа стоительных инструментов и техники в городе Астрахань, Астраханской области и соседних регионах.",
+    "heroText": "Аренда, прокат и продажа строительных инструментов и техники в городе Астрахань, Астраханской области и соседних регионах.",
     "primaryCallToActionButtonText": "Связь",
     "primaryCallToActionButtonTextSec": "Ассортимент",
     "primaryCallToActionButtonLink": "/contact",
