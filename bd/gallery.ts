@@ -676,7 +676,7 @@ export const houses = [
         "bedrooms": 3,
         "halfBathrooms": 1,
         "squareFeet": 1700,
-        "rentPrice": 2500,
+        "rentPrice": 1000,
         "createdAt": "2023-03-14T15:46:38.969Z",
         "updatedAt": "2023-03-16T01:59:43.245Z",
         "publishedAt": "2023-03-14T16:05:14.954Z",
