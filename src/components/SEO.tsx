@@ -78,7 +78,7 @@ const SEO = ({ seo, siteInfo }: Props) => {
 			<meta name="viewport" content="width=device-width, initial-scale=1" />
 			<meta name="robots" content="index, follow" />
 			<link rel="canonical" href={canonicalUrl} />
-
+			<meta name="yandex-verification" content="5d5b6c9f616d916d" />
 			{/* Primary Meta Tags */}
 			<meta name="title" content={title} />
 			<meta name="description" content={`${description}. ${houseDescriptions}`} />
