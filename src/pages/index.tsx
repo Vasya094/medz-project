@@ -1,4 +1,4 @@
-import { Box, Heading, Stack, VStack, Text, List, ListItem, Container as ChakraContainer } from '@chakra-ui/react'
+import { Box, Heading, Stack, VStack, Text, List, ListItem, Container as ChakraContainer, SimpleGrid } from '@chakra-ui/react'
 import type { GetStaticProps } from 'next'
 import SiteInformation from '../types/CmsSingleTypes/siteInformation'
 import Hero from '../components/Hero'
@@ -25,8 +25,8 @@ const HomePage = ({ homePage, siteInfo }: Props) => {
 				<Hero {...homePage} />
 				<Container>
 					<Stack 
-						direction={['column-reverse', 'column-reverse', 'row']} 
-						spacing={[6, 8, 10]}
+						direction={['column', 'column', 'row']} 
+						spacing={6}
 						py={[6, 8, 10]}
 					>
 						<Box width={['full', 'full', '55%']} mt={['2rem', '3rem']} mr={[0, 0, '4rem']}>
@@ -45,7 +45,7 @@ const HomePage = ({ homePage, siteInfo }: Props) => {
 						</Box>
 					</Stack>
 
-					<ChakraContainer maxW="container.lg" py={[8, 10, 12]}>
+					<ChakraContainer maxW="100%" py={[8, 10, 12]} mx={0}>
 						<Heading 
 							as="h2" 
 							fontSize={['2xl', '3xl', '4xl']}
@@ -84,35 +84,35 @@ const HomePage = ({ homePage, siteInfo }: Props) => {
 							</Stack>
 
 							<Box mt={8}>
-								<Heading as="h3" size="lg" mb={6} textAlign="center">
+								<Heading as="h3" size="lg" mb={6} textAlign="center" fontWeight="bold" color="teal.600">
 									Популярное оборудование
 								</Heading>
-								<Stack direction={['column', 'column', 'row']} spacing={6}>
-									<Box flex="1" p={6} borderWidth="1px" borderRadius="lg">
-										<Heading as="h4" size="md" mb={3}>Отбойный молоток бензиновый</Heading>
+								<SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={6}>
+									<Box p={6} borderWidth="1px" borderRadius="lg" boxShadow="md" transition="0.3s" _hover={{ boxShadow: "lg", transform: "scale(1.02)" }} bg="white">
+										<Heading as="h4" size="md" mb={3} color="teal.500">Отбойный молоток бензиновый</Heading>
 										<Text>Ваш надёжный помощник в строительстве. Ищете надёжный инструмент для строительных работ? Наш бензиновый отбойный молоток — это именно то, что вам нужно! Он обладает высокой мощностью и эффективностью, позволяя быстро и качественно выполнять даже самые сложные задачи.</Text>
 									</Box>
-									<Box flex="1" p={6} borderWidth="1px" borderRadius="lg">
-										<Heading as="h4" size="md" mb={3}>Виброплита</Heading>
+									<Box p={6} borderWidth="1px" borderRadius="lg" boxShadow="md" transition="0.3s" _hover={{ boxShadow: "lg", transform: "scale(1.02)" }} bg="white">
+										<Heading as="h4" size="md" mb={3} color="teal.500">Виброплита</Heading>
 										<Text>Идеальное решение для уплотнения грунта. Наша виброплита — незаменимый инструмент для уплотнения различных типов грунта. Она обеспечивает равномерное распределение нагрузки, что позволяет достичь максимальной плотности и прочности поверхности.</Text>
 									</Box>
-									<Box flex="1" p={6} borderWidth="1px" borderRadius="lg">
-										<Heading as="h4" size="md" mb={3}>Трамбовка</Heading>
+									<Box p={6} borderWidth="1px" borderRadius="lg" boxShadow="md" transition="0.3s" _hover={{ boxShadow: "lg", transform: "scale(1.02)" }} bg="white">
+										<Heading as="h4" size="md" mb={3} color="teal.500">Трамбовка</Heading>
 										<Text>Эффективное уплотнение грунта и асфальта. Трамбовка — это ещё один важный инструмент в арсенале любого строителя. Она позволяет эффективно уплотнять грунт и асфальт, обеспечивая надёжное основание для строительства.</Text>
 									</Box>
-									<Box flex="1" p={6} borderWidth="1px" borderRadius="lg">
-										<Heading as="h4" size="md" mb={3}>Бензиновый генератор</Heading>
+									<Box p={6} borderWidth="1px" borderRadius="lg" boxShadow="md" transition="0.3s" _hover={{ boxShadow: "lg", transform: "scale(1.02)" }} bg="white">
+										<Heading as="h4" size="md" mb={3} color="teal.500">Бензиновый генератор</Heading>
 										<Text>Бесперебойная поставка электрической энергии. Наш бензиновый генератор — это надёжное решение для обеспечения бесперебойной поставки электрической энергии.</Text>
 									</Box>
-									<Box flex="1" p={6} borderWidth="1px" borderRadius="lg">
-										<Heading as="h4" size="md" mb={3}>Мини-самосвал (думпер)</Heading>
-										<Text>Удобство и эффективность в перевозке грузов. Если вам нужна удобная и эффективная техника для перевозки грузов, наш мини-самосвал станет отличным выбором.</Text>
+									<Box p={6} borderWidth="1px" borderRadius="lg" boxShadow="md" transition="0.3s" _hover={{ boxShadow: "lg", transform: "scale(1.02)" }} bg="white">
+										<Heading as="h4" size="md" mb={3} color="teal.500">Мини-самосвал (думпер)</Heading>
+										<Text>Удобство и эффективность в перевозке грузов. Если вам нужна удобная и эффективная техника для превозки грузов, наш мини-самосвал станет отличным выбором.</Text>
 									</Box>
-									<Box flex="1" p={6} borderWidth="1px" borderRadius="lg">
-										<Heading as="h4" size="md" mb={3}>Плавающая виброрейка бензиновая</Heading>
+									<Box p={6} borderWidth="1px" borderRadius="lg" boxShadow="md" transition="0.3s" _hover={{ boxShadow: "lg", transform: "scale(1.02)" }} bg="white">
+										<Heading as="h4" size="md" mb={3} color="teal.500">Плавающая виброрейка бензиновая</Heading>
 										<Text>Точное выравнивание поверхностей. Хотите добиться идеального выравнивания поверхностей? Наша плавающая виброрейка поможет вам в этом.</Text>
 									</Box>
-								</Stack>
+								</SimpleGrid>
 							</Box>
 						</VStack>
 					</ChakraContainer>
