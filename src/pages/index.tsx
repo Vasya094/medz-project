@@ -36,7 +36,7 @@ const HomePage = ({ homePage, siteInfo }: Props) => {
 								<WhatsappPhone siteInfo={siteInfo} />
 							</Stack>
 						</Box>
-						<Box mt={['4rem', '0']} width={['full', 'full', '45%']}>
+						<Box width={['full', 'full', '45%']}>
 							<ContactForm
 								siteInfo={siteInfo}
 								formHeading={homePage.contactFormHeading}

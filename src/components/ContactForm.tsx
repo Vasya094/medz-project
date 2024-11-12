@@ -73,7 +73,7 @@ const ContactForm = ({
 			backgroundColor={'white'}
 			boxShadow={'2xl'}
 			rounded={'md'}
-			mt={shouldHaveNegativeTopMargin ? ['-3rem', '-6rem'] : undefined}
+			mt={shouldHaveNegativeTopMargin ? ['-1rem', '-5rem'] : undefined}
 		>
 			<Box p={['2rem', '3rem']}>{children}</Box>
 		</Box>
