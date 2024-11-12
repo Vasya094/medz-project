@@ -30,6 +30,7 @@ const Hero = ({
 			backgroundImage={collage.src}
 			backgroundSize={'auto'}
 			backgroundPosition={'center'}
+			aria-label="Hero section"
 		>
 			<VStack
 				w={'full'}
@@ -45,14 +46,14 @@ const Hero = ({
 						align={['center', 'flex-start']}
 						spacing={['2.5rem', '3rem']}
 					>
-						<Heading
-							color={'white'}
-							fontWeight={700}
-							lineHeight={1.2}
-							fontSize={useBreakpointValue({ base: '3xl', md: '5xl' })}
-						>
-							{heroText}
-						</Heading>
+							<Heading
+								color={'white'}
+								fontWeight={700}
+								lineHeight={1.2}
+								fontSize={useBreakpointValue({ base: '3xl', md: '5xl' })}
+							>
+								{heroText}
+							</Heading>
 						<Stack direction={['column', 'row']} spacing={['0.5rem', '1rem']}>
 							<Link href={primaryCallToActionButtonLinkSec} passHref legacyBehavior>
 								<Button
@@ -60,6 +61,7 @@ const Hero = ({
 									bg={'brand'}
 									color={'white'}
 									_hover={{ bg: 'brandDark' }}
+									title={primaryCallToActionButtonTextSec}
 								>
 									{primaryCallToActionButtonTextSec}
 								</Button>
@@ -70,6 +72,7 @@ const Hero = ({
 									bg={'brand'}
 									color={'white'}
 									_hover={{ bg: 'brandDark' }}
+									title={primaryCallToActionButtonText}
 								>
 									{primaryCallToActionButtonText}
 								</Button>
@@ -81,6 +84,7 @@ const Hero = ({
 										bg={'transparent'}
 										color={'whiteAlpha.800'}
 										_hover={{ bg: 'whiteAlpha.400' }}
+										title={secondaryCallToActionButtonText}
 									>
 										{secondaryCallToActionButtonText}
 									</Button>
