@@ -41,6 +41,7 @@ const HomePage = ({ homePage, siteInfo }: Props) => {
 								siteInfo={siteInfo}
 								formHeading={homePage.contactFormHeading}
 								shouldHaveNegativeTopMargin
+								mt={['4rem', '0']}
 							/>
 						</Box>
 					</Stack>
