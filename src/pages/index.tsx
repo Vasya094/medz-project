@@ -11,6 +11,7 @@ import Phone from '../components/Phone'
 import SEO from '../components/SEO'
 import { homePage, siteInfo } from '../../bd'
 import WhatsappPhone from '../components/WhatsappPhone'
+import Link from "next/link"; 
 
 type Props = {
 	homePage: HomePageType
@@ -45,12 +46,13 @@ const HomePage = ({ homePage, siteInfo }: Props) => {
 						</Box>
 					</Stack>
 
-					<ChakraContainer maxW="100%" py={[8, 10, 12]} mx={0}>
+					<ChakraContainer maxW="100%" py={[8, 10, 12]} mx={0} bg="gray.50" borderRadius="lg" boxShadow="lg">
 						<Heading 
 							as="h2" 
 							fontSize={['2xl', '3xl', '4xl']}
 							textAlign="center"
 							mb={8}
+							color="teal.600"
 						>
 							Ваш надежный партнер в строительстве
 						</Heading>
@@ -63,7 +65,7 @@ const HomePage = ({ homePage, siteInfo }: Props) => {
 							</Box>
 
 							<Stack direction={['column', 'column', 'row']} spacing={6}>
-								<Box flex="1" p={6} bg="gray.50" borderRadius="lg">
+								<Box flex="1" p={6} bg="white" borderRadius="lg" boxShadow="md">
 									<Heading as="h3" size="md" mb={4}>Преимущества аренды</Heading>
 									<List spacing={3}>
 										<ListItem>✓ Экономия на покупке и обслуживании</ListItem>
@@ -72,7 +74,7 @@ const HomePage = ({ homePage, siteInfo }: Props) => {
 										<ListItem>✓ Доставка на объект</ListItem>
 									</List>
 								</Box>
-								<Box flex="1" p={6} bg="gray.50" borderRadius="lg">
+								<Box flex="1" p={6} bg="white" borderRadius="lg" boxShadow="md">
 									<Heading as="h3" size="md" mb={4}>Наш сервис</Heading>
 									<List spacing={3}>
 										<ListItem>✓ Техническая консультация</ListItem>
@@ -92,12 +94,9 @@ const HomePage = ({ homePage, siteInfo }: Props) => {
 										<Heading as="h4" size="md" mb={3} color="teal.500">Отбойный молоток бензиновый</Heading>
 										<Text>Ваш надёжный помощник в строительстве. Ищете надёжный инструмент для строительных работ? Наш бензиновый отбойный молоток — это именно то, что вам нужно! Он обладает высокой мощностью и эффективностью, позволяя быстро и качественно выполнять даже самые сложные задачи.</Text>
 									</Box>
-									<Box p={6} borderWidth="1px" borderRadius="lg" boxShadow="md" transition="0.3s" _hover={{ boxShadow: "lg", transform: "scale(1.02)" }} bg="white">
-										<Heading as="h4" size="md" mb={3} color="teal.500">Виброплита</Heading>
+									<Box as={Link} href="/about/vibratoryplate" p={6} borderWidth="1px" borderRadius="lg" boxShadow="md" transition="0.3s" _hover={{ boxShadow: "lg", transform: "scale(1.02)" }} bg="white">
+										<Heading as="h4" size="md" mb={3} color="teal.500">Трамбовка Виброплита</Heading>
 										<Text>Идеальное решение для уплотнения грунта. Наша виброплита — незаменимый инструмент для уплотнения различных типов грунта. Она обеспечивает равномерное распределение нагрузки, что позволяет достичь максимальной плотности и прочности поверхности.</Text>
-									</Box>
-									<Box p={6} borderWidth="1px" borderRadius="lg" boxShadow="md" transition="0.3s" _hover={{ boxShadow: "lg", transform: "scale(1.02)" }} bg="white">
-										<Heading as="h4" size="md" mb={3} color="teal.500">Трамбовка</Heading>
 										<Text>Эффективное уплотнение грунта и асфальта. Трамбовка — это ещё один важный инструмент в арсенале любого строителя. Она позволяет эффективно уплотнять грунт и асфальт, обеспечивая надёжное основание для строительства.</Text>
 									</Box>
 									<Box p={6} borderWidth="1px" borderRadius="lg" boxShadow="md" transition="0.3s" _hover={{ boxShadow: "lg", transform: "scale(1.02)" }} bg="white">
@@ -123,11 +122,6 @@ const HomePage = ({ homePage, siteInfo }: Props) => {
 }
 
 export const getStaticProps: GetStaticProps = () => {
-	// const [homePage, siteInfo] = await Promise.all([
-	// 	getData('home-page?populate=*'),
-	// 	getSiteInfo(),
-	// ])
-
 	return {
 		props: {
 			homePage,
