@@ -79,7 +79,6 @@ const HomePage = ({ homePage, siteInfo }: Props) => {
 									<List spacing={3}>
 										<ListItem>✓ Техническая консультация</ListItem>
 										<ListItem>✓ Круглосуточная поддержка</ListItem>
-										<ListItem>✓ Обучение персонала</ListItem>
 										<ListItem>✓ Гибкие условия оплаты</ListItem>
 									</List>
 								</Box>
@@ -99,7 +98,7 @@ const HomePage = ({ homePage, siteInfo }: Props) => {
 										<Text>Идеальное решение для уплотнения грунта. Наша виброплита — незаменимый инструмент для уплотнения различных типов грунта. Она обеспечивает равномерное распределение нагрузки, что позволяет достичь максимальной плотности и прочности поверхности.</Text>
 										<Text>Эффективное уплотнение грунта и асфальта. Трамбовка — это ещё один важный инструмент в арсенале любого строителя. Она позволяет эффективно уплотнять грунт и асфальт, обеспечивая надёжное основание для строительства.</Text>
 									</Box>
-									<Box p={6} borderWidth="1px" borderRadius="lg" boxShadow="md" transition="0.3s" _hover={{ boxShadow: "lg", transform: "scale(1.02)" }} bg="white">
+									<Box as={Link} href="/about/generator" p={6} borderWidth="1px" borderRadius="lg" boxShadow="md" transition="0.3s" _hover={{ boxShadow: "lg", transform: "scale(1.02)" }} bg="white">
 										<Heading as="h4" size="md" mb={3} color="teal.500">Бензиновый генератор</Heading>
 										<Text>Бесперебойная поставка электрической энергии. Наш бензиновый генератор — это надёжное решение для обеспечения бесперебойной поставки электрической энергии.</Text>
 									</Box>
@@ -110,6 +109,10 @@ const HomePage = ({ homePage, siteInfo }: Props) => {
 									<Box p={6} borderWidth="1px" borderRadius="lg" boxShadow="md" transition="0.3s" _hover={{ boxShadow: "lg", transform: "scale(1.02)" }} bg="white">
 										<Heading as="h4" size="md" mb={3} color="teal.500">Плавающая виброрейка бензиновая</Heading>
 										<Text>Точное выравнивание поверхностей. Хотите добиться идеального выравнивания поверхностей? Наша плавающая виброрейка поможет вам в этом.</Text>
+									</Box>
+									<Box p={6} borderWidth="1px" borderRadius="lg" boxShadow="md" transition="0.3s" _hover={{ boxShadow: "lg", transform: "scale(1.02)" }} bg="white">
+										<Heading as="h4" size="md" mb={3} color="teal.500">Минитрактор</Heading>
+										<Text>Идеальный помощник для сельского хозяйства и дачного строительства. Наш минитрактор сочетает в себе мощность и маневренность, позволяя выполнять широкий спектр задач — от вспашки и посева до транспортировки грузов. С ним вы сможете значительно упростить и ускорить работу на вашем участке, обеспечивая высокую производительность и эффективность.</Text>
 									</Box>
 								</SimpleGrid>
 							</Box>

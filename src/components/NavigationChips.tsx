@@ -15,7 +15,14 @@ const NavigationChips = () => {
 				variant="outline" 
 				mr={2}
 			>
-				Виброплита
+				Виброплиты (Трамбовки)
+			</Button>
+			<Button 
+				onClick={() => handleNavigation('/about/generator')} 
+				variant="outline" 
+				mr={2}
+			>
+				Электрогенератор
 			</Button>
 			<Button 
 				variant="outline"
